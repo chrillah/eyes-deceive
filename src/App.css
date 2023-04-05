@@ -26,6 +26,12 @@
     --orange-1: #F28705;
 }
 
+/* Global settings */
+
+ul li{
+    list-style: none;
+}
+
 
 /* NavBar component */
 .nav-bar{
@@ -37,6 +43,20 @@
     /* min-width: 40px;
     min-height: 40px; */
     background-color: white;
+}
+
+/* svg home-eye */
+.home-eye{
+width: 50px;
+}
+.home-eye-white {
+    fill: #fff;
+}
+
+.home-eye-pupil:hover,
+.home-eye-pupil:focus,
+.home-eye-pupil:active{
+    fill: var(--pink-1);
 }
 
 /* Hero */
@@ -69,24 +89,13 @@
     height: 120px;
 }
 
-/* .open-eye{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--);
-    min-width: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid black;
-    transition: height 500ms ease-in-out;
-} */
-
 .eye{
     background-color: var(--purple-1);
     border-radius: 50%;
     width: 100px;
     height: 100px;
 }
+
 
 /* Footer */
 

@@ -39,6 +39,14 @@
     background-color: black;
 }
 
+.img-container{
+    min-height: 200px;
+    background-image: url('./img/web.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
 .footer-header{
     color: white;
     text-align: center;

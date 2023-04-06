@@ -61,6 +61,12 @@ ul li {
 /* NavBar component */
 .nav-bar {
     border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--white-1);
 }
 
 .nav-btn-container{

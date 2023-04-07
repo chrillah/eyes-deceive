@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 37.96">
   <defs>
     <style>
       .cls-1 {
@@ -7,7 +7,7 @@
       }
     </style>
   </defs>
-  <polygon id="triangle" points="50 30 25 0 0 30 50 30"/>
-  <path id="white" class="cls-1" d="M15.33,10.33h0c10.68,0,19.34,8.67,19.34,19.34h0c-10.68,0-19.34-8.67-19.34-19.34h0Z" transform="translate(-6.82 23.54) rotate(-45)"/>
-  <circle id="eye" cx="25" cy="20" r="4.59"/>
+  <polygon id="triangle" points="50 37.96 25 0 0 37.96 50 37.96"/>
+  <path id="white" class="cls-1" d="M15.33,9.31h0c10.68,0,19.34,8.67,19.34,19.34h0c-10.68,0-19.34-8.67-19.34-19.34h0Z" transform="translate(-6.1 23.24) rotate(-45)"/>
+  <circle id="eye" cx="25" cy="18.98" r="4.59"/>
 </svg>

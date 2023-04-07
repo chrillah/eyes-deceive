@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <>
             <nav className="nav-bar">
-                <ul className='nav-btn-container'>
+                <ul className="nav-btn-container">
                     <li>
                         <Link to="/">
                             <svg
@@ -14,23 +14,23 @@ function NavBar() {
                                 id="Layer_1"
                                 data-name="Layer 1"
                                 xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 50 30"
+                                viewBox="0 0 50 37.96"
                             >
                                 <polygon
                                     id="triangle"
-                                    points="50 30 25 0 0 30 50 30"
+                                    points="50 37.96 25 0 0 37.96 50 37.96"
                                 />
                                 <path
-                                    id="white"
                                     class="home-eye-white"
-                                    d="M15.33,10.33h0c10.68,0,19.34,8.67,19.34,19.34h0c-10.68,0-19.34-8.67-19.34-19.34h0Z"
-                                    transform="translate(-6.82 23.54) rotate(-45)"
+                                    id="white"
+                                    d="M15.33,9.31h0c10.68,0,19.34,8.67,19.34,19.34h0c-10.68,0-19.34-8.67-19.34-19.34h0Z"
+                                    transform="translate(-6.1 27.24) rotate(-45)"
                                 />
                                 <circle
                                     className="home-eye-pupil"
                                     id="eye"
                                     cx="25"
-                                    cy="20"
+                                    cy="23"
                                     r="4.59"
                                 />
                             </svg>
@@ -39,7 +39,7 @@ function NavBar() {
                     <li>
                         <Link to="/crazy-corner">
                             <svg
-                            className='home-grid'
+                                className="home-grid"
                                 id="Layer_1"
                                 data-name="Layer 1"
                                 xmlns="http://www.w3.org/2000/svg"

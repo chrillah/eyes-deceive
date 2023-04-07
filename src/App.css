@@ -25,16 +25,23 @@
     --yellow-1: #f2b705;
     --orange-1: #f28705;
 
-    --gradient-1 : linear-gradient(45deg,var(--pink-1), var(--purple-1), var(--green-1), var(--yellow-1), var(--orange-1));
+    --gradient-1: linear-gradient(
+        45deg,
+        var(--pink-1),
+        var(--purple-1),
+        var(--green-1),
+        var(--yellow-1),
+        var(--orange-1)
+    );
 }
 
 /* Global settings */
-body{
+body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
@@ -42,7 +49,7 @@ ul li {
     list-style: none;
 }
 
-.gradient-container-1{
+.gradient-container-1 {
     height: 100%;
     width: 100%;
     background-image: var(--gradient-1);
@@ -51,10 +58,10 @@ ul li {
 }
 
 @keyframes gradient-animation {
-    0%{
+    0% {
         background-position: left;
     }
-    100%{
+    100% {
         background-position: right;
     }
 }
@@ -69,16 +76,18 @@ ul li {
     background-color: var(--white-1);
 }
 
-.nav-btn-container{
-    padding: .6rem;
+.nav-btn-container {
+    padding: 0.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* svg home-eye */
 .home-eye {
-    width: 50px;
+    width: 40px;
 }
 .home-eye-white {
     fill: #fff;
@@ -90,6 +99,24 @@ ul li {
     fill: var(--pink-1);
 }
 
+.home-eye-pupil {
+    animation: eye-movement 10000ms infinite;
+}
+
+@keyframes eye-movement {
+    0%,
+    50%,
+    100% {
+        cx: 25;
+    }
+    25% {
+        cx: 20;
+    }
+    75% {
+        cx: 30;
+    }
+}
+
 /* svg grid */
 
 .cls-1 {
@@ -98,8 +125,9 @@ ul li {
     stroke-miterlimit: 10;
 }
 
-.home-grid{
-    width: 40px;
+.home-grid {
+    rotate: 45deg;
+    width: 30px;
 }
 
 /* Hero */
@@ -120,17 +148,16 @@ ul li {
     animation: gradient-animation 25s infinite alternate;
 }
 
-.gradient-container-1{
+.gradient-container-1 {
     height: 100%;
     width: 100%;
-
 }
 
 @keyframes gradient-animation {
-    0%{
+    0% {
         background-position: left;
     }
-    100%{
+    100% {
         background-position: right;
     }
 }

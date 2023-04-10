@@ -190,6 +190,40 @@ ul li {
     height: 100px;
 }
 
+.spiral{
+    width: 100px;
+    height: 100px;
+    animation: spinning 1000ms infinite linear;
+}
+
+@keyframes spinning {
+    from{
+        rotate: 0;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+.spiral-detail {
+    fill: none;
+    stroke: var(--pink-1);
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+
+/* Crazy-corner */
+.crazy-header{
+    color: red;
+    margin-top: 50vh;
+    font-size: large;
+}
+
+/* PATTERNS */
+
+
+
 /* Footer */
 
 .footer-bar {

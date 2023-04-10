@@ -11,7 +11,7 @@ function App() {
     <NavBar />
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/grid" element={<CrazyCorner />} />
+        <Route path="/grid/:choice" element={<CrazyCorner />} />
     </Routes>
     <Footer />
     </>

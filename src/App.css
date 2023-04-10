@@ -25,6 +25,30 @@
     --yellow-1: #f2b705;
     --orange-1: #f28705;
 
+    --pink-2: #f2b3d6;
+    --light-purple-1: #b7aef2;
+    --green-2: #238c6e;
+    --green-3: #2bd999;
+    --grey-1: #f2eeeb;
+
+    --yellow-2: #f2cf66;
+    --orange-2: #f26716;
+    --red-1: #f24405;
+    --grey-2: #f2f2f2;
+    --black-2: #0d0d0d;
+
+    --purple-2: #8857f2;
+    --blue-1: #6b71f2;
+    --neon-green-1: #d7f205;
+    --yellow-3: #f2cb05;
+    --orange-3: #f28705;
+
+    --pink-3: #f2a7c3;
+    --blue-2: #2c6cbf;
+    --light-blue-1: #88c9f2;
+    --pastel-green-1: #6fbfb1;
+    --pastel-yellow-1: #f2cd5c;
+
     --gradient-1: linear-gradient(
         45deg,
         var(--pink-1),
@@ -32,6 +56,78 @@
         var(--green-1),
         var(--yellow-1),
         var(--orange-1)
+    );
+    --gradient-2: linear-gradient(
+        45deg,
+        var(--pink-2),
+        var(--light-purple-1),
+        var(--green-2),
+        var(--green-3),
+        var(--grey-1)
+    );
+    --gradient-3: linear-gradient(
+        45deg,
+        var(--yellow-2),
+        var(--orange-2),
+        var(--red-1),
+        var(--grey-2),
+        var(--black-2)
+    );
+    --gradient-4: linear-gradient(
+        45deg,
+        var(--purple-2),
+        var(--blue-1),
+        var(--neon-green-1),
+        var(--yellow-3),
+        var(--orange-3)
+    );
+    --gradient-5: linear-gradient(
+        45deg,
+        var(--pink-3),
+        var(--blue-2),
+        var(--light-blue-1),
+        var(--pastel-green-1),
+        var(--pastel-yellow-1)
+    );
+    --gradient-6: linear-gradient(
+        45deg,
+        var(--light-blue-1),
+        var(--purple-1),
+        var(--orange-2),
+        var(--grey-1),
+        var(--blue-1)
+    );
+    --gradient-7: linear-gradient(
+        45deg,
+        var(--pink-1),
+        var(--blue-2),
+        var(--pastel-yellow-1),
+        var(--purple-2),
+        var(--neon-green-1)
+    );
+    --gradient-8: linear-gradient(
+        45deg,
+        var(--pink-3),
+        var(--purple-2),
+        var(--green-3),
+        var(--yellow-3),
+        var(--blue-2)
+    );
+    --gradient-9: linear-gradient(
+        45deg,
+        var(--light-blue-1),
+        var(--light-purple-1),
+        var(--pink-3),
+        var(--grey-2),
+        var(--blue-1)
+    );
+    --gradient-10: linear-gradient(
+        45deg,
+        var(--black-1),
+        var(--light-purple-1),
+        var(--pink-3),
+        var(--red-1),
+        var(--pastel-green-1)
     );
 }
 
@@ -190,17 +286,17 @@ ul li {
     height: 100px;
 }
 
-.spiral{
+.spiral {
     width: 100px;
     height: 100px;
     animation: spinning 1000ms infinite linear;
 }
 
 @keyframes spinning {
-    from{
+    from {
         rotate: 0;
     }
-    to{
+    to {
         rotate: 360deg;
     }
 }
@@ -211,145 +307,141 @@ ul li {
     stroke-linecap: round;
     stroke-miterlimit: 10;
     stroke-width: 2px;
-  }
+}
 
 /* Crazy-corner */
-.crazy-header{
+.crazy-header {
     color: red;
     min-height: 50vh;
     font-size: large;
 }
 
+.item-test {
+    color: red;
+    font-size: 2rem;
+}
 /* PATTERNS */
 
-.grid{
+.grid {
     height: 300px;
     /* width: 100px; */
 }
 
-.regular{
+.regular {
     background-image: var(--gradient-1);
 }
 
-.bg-hori-rand{
+.bg-hori-rand {
     background-image: url('../src/img/_hori-rand.png');
 }
 
-.bg-liggande-triangel{
+.bg-liggande-triangel {
     background-image: url('../src/img/_liggande-triangel.png');
 }
 
-.bg-prick{
+.bg-prick {
     background-image: url('../src/img/_prick.png');
 }
 
-.bg-ruta{
+.bg-ruta {
     background-image: url('../src/img/_ruta.png');
 }
 
-.bg-stående-triangel{
+.bg-stående-triangel {
     background-image: url('../src/img/_stående-triangel.png');
 }
 
-.bg-tintin-rutor{
+.bg-tintin-rutor {
     background-image: url('../src/img/_tintin-rutor.png');
 }
 
-.bg-vågor{
+.bg-vågor {
     background-image: url('../src/img/_vågor.png');
 }
 
-.bg-vanliga-zick-zack{
+.bg-vanliga-zick-zack {
     background-image: url('../src/img/_vanliga-zick-zack.png');
 }
 
-.bg-ver-rand{
+.bg-ver-rand {
     background-image: url('../src/img/_ver-rand.png');
 }
 
-.bg-zick-zack{
+.bg-zick-zack {
     background-image: url('../src/img/_zick-zack.png');
 }
 
+.gradient-bg-1{
+    background-image: var(--gradient-1)
+}
+.gradient-bg-2{
+    background-image: var(--gradient-2)
+}
+.gradient-bg-3{
+    background-image: var(--gradient-3)
+}
+
+.gradient-bg-4{
+    background-image: var(--gradient-4)
+}
+.gradient-bg-5{
+    background-image: var(--gradient-5)
+}
+.gradient-bg-6{
+    background-image: var(--gradient-6)
+}
+.gradient-bg-7{
+    background-image: var(--gradient-7)
+}
+.gradient-bg-8{
+    background-image: var(--gradient-8)
+}
+.gradient-bg-9{
+    background-image: var(--gradient-9)
+}
+.gradient-bg-10{
+    background-image: var(--gradient-10)
+}
+
+
 /* DIfferent Grids */
 
-.grid-container{
+.grid-container {
     display: grid;
 }
 
-.grid-layout-wrapper-1{
+.grid-layout-wrapper-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.grid-item-1{
+.grid-item-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-.grid-layout-wrapper-2{
+/* in progress */
+.grid-layout-wrapper-2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-}
-
-.grid-layout-wrapper-3{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-}
-
-.grid-item-3-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.grid-item-3-2{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.grid-item-3-3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
 }
 
 @media (min-width: 768px) {
-    .grid-layout-wrapper-1{
+    .grid-layout-wrapper-1 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    .grid-item-1{
+    .grid-item-1 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .grid-layout-wrapper-2{
+    .grid-layout-wrapper-2 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-    }
-
-    .grid-layout-wrapper-3{
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .grid-item-3-1{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .grid-item-3-2{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .grid-item-3-3{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 }
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 // import { useParams } from 'react-router-dom'
 
-function CrazyCorner() {
+function Grid() {
 
     const [data, setData] = useState([])
 
@@ -38,14 +38,12 @@ function CrazyCorner() {
             <div className="grid-layout-wrapper-1">
                 {gridItemOne1.map((item) => (
                     <div key={item.id} className={item.gradient}>
-                        <p className="item-test">{item.id}</p>
                     </div>
                 ))}
 
                 <div className="grid-item-1">
                     {gridItemOne2.map((item) => (
                         <div key={item.id} className={item.pattern + ' grid'}>
-                            <p className="item-test">{item.id}</p>
                         </div>
                     ))}
                 </div>
@@ -54,7 +52,6 @@ function CrazyCorner() {
             <div className="grid-layout-wrapper-2">
                 {gridLayoutTwo.map((item) => (
                     <div key={item.id} className={item.pattern + ' grid'}>
-                        <p className="item-test">{item.id}</p>
                     </div>
                 ))}
             </div>
@@ -62,14 +59,12 @@ function CrazyCorner() {
             <div className="grid-layout-wrapper-1">
                 {gridItemThree0.map((item) => (
                     <div key={item.id} className={item.gradient}>
-                        <p className="item-test">{item.id}</p>
                     </div>
                 ))}
 
                 <div className="grid-item-1">
                     {gridItemThree1.map((item) => (
                         <div key={item.id} className={item.gradient + ' grid'}>
-                            <p className="item-test">{item.id}</p>
                         </div>
                     ))}
                 </div>
@@ -78,7 +73,6 @@ function CrazyCorner() {
             <div className="grid-layout-wrapper-2">
                 {gridItemThree3.map((item) => (
                     <div key={item.id} className={item.pattern + ' grid'}>
-                        <p className="item-test">{item.id}</p>
                     </div>
                 ))}
             </div>
@@ -87,4 +81,4 @@ function CrazyCorner() {
     )
 }
 
-export default CrazyCorner
+export default Grid

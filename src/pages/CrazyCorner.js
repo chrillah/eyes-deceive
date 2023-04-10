@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
-// import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 function CrazyCorner() {
+
     const [data, setData] = useState([])
+
+
     useEffect(() => {
         fetch('data.json', {
             headers: {
@@ -28,12 +31,9 @@ function CrazyCorner() {
 
     const gridItemThree3 = gridLayoutThree.slice(3, 5)
 
-    // const { choice } = useParams()
+
     return (
         <div className="grid-container">
-            {/* <h1 className="crazy-header">
-                {choice === 'crazy' ? 'crazy' : 'not crazy'}
-            </h1> */}
 
             <div className="grid-layout-wrapper-1">
                 {gridItemOne1.map((item) => (

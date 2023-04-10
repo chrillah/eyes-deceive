@@ -1,0 +1,52 @@
+[
+    {
+        "id" : 1,
+        "pattern" : "bg-hori-rand",
+        "gradient" : "gradient-bg-1"
+    },
+    {
+        "id" : 2,
+        "pattern" : "bg-liggande-triangel",
+        "gradient" : "gradient-bg-2"
+    },
+    {
+        "id" : 3,
+        "pattern" : "bg-prick",
+        "gradient" : "gradient-bg-3"
+    },
+    {
+        "id" : 4,
+        "pattern" : "bg-ruta",
+        "gradient" : "gradient-bg-4"
+    },
+    {
+        "id" : 5,
+        "pattern" : "bg-stående-triangel",
+        "gradient" : "gradient-bg-5"
+    },
+    {
+        "id" : 6,
+        "pattern" : "bg-tintin-rutor",
+        "gradient" : "gradient-bg-6"
+    },
+    {
+        "id" : 7,
+        "pattern" : "bg-vågor",
+        "gradient" : "gradient-bg-7"
+    },
+    {
+        "id" : 8,
+        "pattern" : "bg-vanliga-zick-zack",
+        "gradient" : "gradient-bg-8"
+    },
+    {
+        "id" : 9,
+        "pattern" : "bg-ver-rand",
+        "gradient" : "gradient-bg-9"
+    },
+    {
+        "id" : 10,
+        "pattern" : "bg-zick-zack",
+        "gradient" : "gradient-bg-10"
+    }
+]

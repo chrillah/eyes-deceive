@@ -223,8 +223,8 @@ ul li {
 /* PATTERNS */
 
 .grid{
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    /* width: 100px; */
 }
 
 .regular{
@@ -272,6 +272,10 @@ ul li {
 }
 
 /* DIfferent Grids */
+
+.grid-container{
+    display: grid;
+}
 
 .grid-layout-wrapper-1{
     display: grid;

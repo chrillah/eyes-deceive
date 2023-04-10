@@ -216,12 +216,51 @@ ul li {
 /* Crazy-corner */
 .crazy-header{
     color: red;
-    margin-top: 50vh;
+    min-height: 50vh;
     font-size: large;
 }
 
 /* PATTERNS */
 
+.bg-hori-rand{
+    background-image: url('../src/img/_hori-rand.png');
+}
+
+.bg-liggande-triangel{
+    background-image: url('../src/img/_liggande-triangel.png');
+}
+
+.bg-prick{
+    background-image: url('../src/img/_prick.png');
+}
+
+.bg-ruta{
+    background-image: url('../src/img/_ruta.png');
+}
+
+.bg-stående-triangel{
+    background-image: url('../src/img/_stående-triangel.png');
+}
+
+.bg-tintin-rutor{
+    background-image: url('../src/img/_tintin-rutor.png');
+}
+
+.bg-vågor{
+    background-image: url('../src/img/_vågor.png');
+}
+
+.bg-vanliga-zick-zack{
+    background-image: url('../src/img/_vanliga-zick-zack.png');
+}
+
+.bg-ver-rand{
+    background-image: url('../src/img/_ver-rand.png');
+}
+
+.bg-zick-zack{
+    background-image: url('../src/img/_zick-zack.png');
+}
 
 
 /* Footer */

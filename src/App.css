@@ -97,16 +97,16 @@
         var(--grey-1),
         var(--blue-1)
     );
-    --gradient-7: linear-gradient(
-        45deg,
-        var(--pink-1),
-        var(--blue-2),
-        var(--pastel-yellow-1),
-        var(--purple-2),
-        var(--neon-green-1)
+    --gradient-7: radial-gradient(
+        circle,
+        var(--pink-1)20%,
+        var(--blue-2) 40%,
+        var(--pastel-yellow-1) 60%,
+        var(--purple-2) 80%,
+        var(--neon-green-1) 100%
     );
     --gradient-8: linear-gradient(
-        45deg,
+        90deg,
         var(--pink-3),
         var(--purple-2),
         var(--green-3),
@@ -312,7 +312,7 @@ ul li {
 /* Crazy-corner */
 .crazy-header {
     color: red;
-    min-height: 50vh;
+
     font-size: large;
 }
 
@@ -368,7 +368,19 @@ ul li {
 }
 
 .bg-zick-zack {
+    background-color: var(--light-purple-1);
     background-image: url('../src/img/_zick-zack.png');
+    background-size: 10%;
+    animation: moving-zick-zack 10000ms infinite alternate;
+}
+
+@keyframes moving-zick-zack {
+    from{
+        background-position: top;
+    }
+    to{
+        background-position: bottom;
+    }
 }
 
 .gradient-bg-1{
@@ -391,10 +403,35 @@ ul li {
     background-image: var(--gradient-6)
 }
 .gradient-bg-7{
-    background-image: var(--gradient-7)
+    background-image: var(--gradient-7);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: moving-gradient-7 10000ms infinite alternate;
 }
+
+@keyframes moving-gradient-7 {
+    from{
+        background-size: 100%;
+    }
+
+    to{
+        background-size: 200%;
+    }
+}
+
 .gradient-bg-8{
-    background-image: var(--gradient-8)
+    background-image: var(--gradient-8);
+    background-size: 200%;
+    animation: moving-gradient-8 infinite alternate 12000ms;
+}
+
+@keyframes moving-gradient-8 {
+    from{
+        background-position: right;
+    }
+    to{
+        background-position: left;
+    }
 }
 .gradient-bg-9{
     background-image: var(--gradient-9)
@@ -443,6 +480,17 @@ ul li {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+}
+
+/* Spaced */
+.spaced-wrapper{
+    background-color: var(--blue-1);
+    margin-top: 2rem;
+    min-height: 100vh;
+    background-image: url('../src/img/optical_illusion.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Footer */

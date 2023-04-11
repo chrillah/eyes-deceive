@@ -30,7 +30,6 @@ function GridComponent(props) {
                 <div className="grid-item-1">
                     {gridItemOne2 && gridItemOne2.map((item) => (
                         <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
-                            {props.clock}
                         </div>
                     ))}
                 </div>
@@ -46,6 +45,7 @@ function GridComponent(props) {
             <div className="grid-layout-wrapper-1">
                 {gridItemThree0 && gridItemThree0.map((item) => (
                     <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
+                                                    {props.clock}
                     </div>
                 ))}
 

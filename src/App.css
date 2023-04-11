@@ -511,6 +511,21 @@ ul li {
     background-size: cover;
 }
 
+/* CLOCK */
+
+.clock-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-1);
+}
+
+.clock-header{
+    font-size: 20vh;
+    color: white;
+    font-family: var(--nabla-display)
+}
+
 /* Footer */
 
 .footer-bar {

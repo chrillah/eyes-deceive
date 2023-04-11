@@ -1,21 +1,7 @@
 import React from 'react'
-// import { useParams } from 'react-router-dom'
 
 function GridComponent(props) {
 
-    // const [data] = useState(props.data)
-
-
-    // useEffect(() => {
-    //     fetch('data.json', {
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //             Accept: 'application/json'
-    //         }
-    //     })
-    //         .then((response) => response.json())
-    //         .then((data) => setData(data))
-    // }, [])
 
     const gridLayoutOne = props.data.slice(0, 3)
     const gridItemOne1 = gridLayoutOne.slice(0, 1)
@@ -44,6 +30,7 @@ function GridComponent(props) {
                 <div className="grid-item-1">
                     {gridItemOne2 && gridItemOne2.map((item) => (
                         <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
+                            {props.clock}
                         </div>
                     ))}
                 </div>

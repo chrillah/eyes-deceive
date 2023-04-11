@@ -18,7 +18,7 @@ function OpticalIllusion(props) {
     }, [])
     return (
         <div>
-            <GridComponent data={data} regular={props.choice}/>
+            <GridComponent data={data} regular={props.choice} clock={props.clock}/>
         </div>
     )
 }

@@ -37,7 +37,7 @@ function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/grid">
+                        <Link to="/optical">
                             <svg
                                 className="home-grid"
                                 id="Layer_1"

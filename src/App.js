@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import Grid from './pages/Grid'
 import Spaced from './pages/Spaced'
 import Footer from './components/Footer'
+import OpticalIllusion from './pages/OpticalIllusion'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/grid" element={<Grid />} />
-        <Route path="/spaced/:choice" element={<Spaced />} />
+        <Route path="/spaced" element={<Spaced />} />
+        <Route path="/optical" element={<OpticalIllusion />} />
     </Routes>
     <Footer />
     </>

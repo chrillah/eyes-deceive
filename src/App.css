@@ -312,7 +312,7 @@ ul li {
 /* Crazy-corner */
 .crazy-header {
     color: red;
-
+    margin-top: 15rem;
     font-size: large;
 }
 

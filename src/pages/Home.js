@@ -12,7 +12,7 @@ function Home() {
     return (
         <div className="hero-container">
             <div onClick={openEye} className={eye}>
-                <Link to="/spaced/crazy">
+                <Link to="/spaced">
                     <div className="eye">
                         <svg
                             className="spiral"

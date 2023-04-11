@@ -1,12 +1,12 @@
 import React from 'react'
 import OpticalChoice from '../components/OpticalChoice'
 
-function Spaced() {
+function OpticalIllusion() {
   return (
     <div>
-        <OpticalChoice choice={false} />
+        <OpticalChoice choice={true} />
     </div>
   )
 }
 
-export default Spaced
+export default OpticalIllusion

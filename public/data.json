@@ -1,17 +1,17 @@
 [
     {
         "id" : 1,
-        "pattern" : "bg-hori-rand",
+        "pattern" : "bg-pattern-zig-zag",
         "gradient" : "gradient-bg-1"
     },
     {
         "id" : 2,
-        "pattern" : "bg-liggande-triangel",
+        "pattern" : "bg-pattern-cross",
         "gradient" : "gradient-bg-2"
     },
     {
         "id" : 3,
-        "pattern" : "bg-prick",
+        "pattern" : "bg-pattern-dots",
         "gradient" : "gradient-bg-3"
     },
     {

@@ -339,6 +339,245 @@ ul li {
     color: red;
     font-size: 2rem;
 }
+/* NEW! Patterns */
+.bg-pattern-1 {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-2);
+    background-image:
+    conic-gradient(
+        from 330deg at 50% 60%,
+        var(--color-1) 60deg,
+        transparent 60deg
+        ),
+    conic-gradient(
+        from 150deg at 50% 30%,
+        var(--color-1) 60deg,
+        transparent 60deg
+        )
+    ;
+    background-position: 0 0, 1.5rem -.5rem;
+    background-size: 3rem 3rem;
+    animation: pattern-animation-1 10000ms infinite alternate;
+}
+
+@keyframes pattern-animation-1 {
+    from {
+        background-position: 0 0, 1.5rem -.5rem;
+        background-size: 3rem 3rem;
+    }
+    to {
+        background-position: 1 0, 1rem 0;
+        background-size: 5rem 1rem;
+    }
+}
+
+/* OK */
+.bg-pattern-triangles {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-2);
+    background-image:
+    conic-gradient(
+        from 330deg at 50% 60%,
+        var(--color-1) 60deg,
+        transparent 60deg
+        ),
+    conic-gradient(
+        from 150deg at 50% 30%,
+        var(--color-1) 60deg,
+        transparent 60deg
+        )
+    ;
+    background-position: 0 0, 1.5rem -.5rem;
+    background-size: 3rem 3rem;
+    animation: pattern-animation-1 10000ms infinite alternate;
+}
+
+@keyframes pattern-animation-triangles {
+    from {
+        background-position: 0 0, 1.5rem -.5rem;
+        background-size: 3rem 3rem;
+    }
+    to {
+        background-position: 1 0, 1rem 0;
+        background-size: 5rem 1rem;
+    }
+}
+
+/* OK */
+.bg-pattern-wave {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-image: radial-gradient(
+            circle at 100% 50%,
+            transparent 1rem,
+            var(--color-2) 1rem,
+            var(--color-2) 1.5rem,
+            transparent 1.5rem
+        ),
+        radial-gradient(
+            circle at 0% 50%,
+            transparent 1rem,
+            var(--color-2) 1rem,
+            var(--color-2) 1.5rem,
+            transparent 1.5rem
+        );
+    background-size: 3rem 5rem;
+    background-position: 0 0, 0 2.5rem;
+
+    animation: pattern-animation-wave 10000ms infinite alternate;
+}
+
+@keyframes pattern-animation-wave {
+    from {
+        background-size: 3rem 5rem;
+    }
+    to {
+        background-size: 1rem 5rem;
+    }
+}
+
+/* OK */
+.bg-pattern-circles {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-image: radial-gradient(
+        circle,
+        transparent 1rem,
+        var(--color-2) 1rem,
+        var(--color-2) 1.5rem,
+        transparent 1.5rem
+    );
+    background-size: 3rem 3rem;
+
+    animation: pattern-animation-circles 4000ms infinite alternate;
+}
+
+@keyframes pattern-animation-circles {
+    from {
+        background-size: 3rem 3rem;
+        background-position: center;
+    }
+    to {
+        background-size: 1rem 2rem;
+        background-position: center;
+    }
+}
+
+/* OK */
+.bg-pattern-dots {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-image: radial-gradient(
+        circle,
+        transparent 1rem,
+        var(--color-2) 1rem,
+        var(--color-2) 3rem,
+        var(--blue-1) 3rem,
+        var(--blue-1) 5rem,
+        transparent 5rem
+    );
+    background-size: 3rem 3rem;
+
+    animation: pattern-animation-dots 3000ms infinite alternate;
+}
+
+@keyframes pattern-animation-dots {
+    from {
+        background-size: 3rem 3rem;
+        background-position: right bottom;
+    }
+    to {
+        background-size: 2rem 2rem;
+        background-position: left top;
+    }
+}
+
+/* OK */
+.bg-pattern-cross {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-size: 5rem 5rem;
+    background-position: 5.25rem 5.25rem, 2.5rem 2.5rem, 2.5rem 2.5rem;
+    background-image: radial-gradient(
+            circle,
+            transparent 1rem,
+            var(--color-1) 1rem
+        ),
+        linear-gradient(var(--color-2) 0.5rem, transparent 0.5rem),
+        linear-gradient(90deg, var(--color-2) 0.5rem, transparent 0.5rem);
+    animation: pattern-animation-cross 10000ms infinite alternate;
+}
+
+@keyframes pattern-animation-cross {
+    from {
+        background-size: 5rem 5rem;
+    }
+    to {
+        background-size: 2rem 2rem, 1rem 1rem, 1rem 1rem;
+    }
+}
+
+/* OK */
+.bg-pattern-grid {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-size: 3rem 3rem;
+    background-image: linear-gradient(var(--color-2) 0.1rem, transparent 0.1rem),
+        linear-gradient(90deg, var(--color-2) 0.1rem, transparent 0.1rem);
+    animation: pattern-animation-1 4000ms infinite alternate;
+}
+
+@keyframes pattern-animation-grid {
+    from {
+        background-size: 4rem 4rem, 2rem 2rem;
+        background-position: center;
+        /* background-position: 2rem 0, 4rem 0, 0 0, 0 0; */
+    }
+    to {
+        background-size: 3rem 3rem;
+        background-position: center;
+        /* background-position: 2rem 0, 2rem 0, 0 0, 0 0; */
+    }
+}
+
+/* OK */
+.bg-pattern-zig-zag {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-2);
+    background-size: 4rem 4rem;
+    background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+    background-image: linear-gradient(
+            -45deg,
+            transparent 75%,
+            var(--color-1) 75%
+        ),
+        linear-gradient(45deg, transparent 75%, var(--color-1) 75%),
+        linear-gradient(-135deg, transparent 75%, var(--color-1) 75%),
+        linear-gradient(135deg, transparent 75%, var(--color-1) 75%);
+    animation: pattern-animation-zig-zag 5000ms infinite alternate;
+}
+
+/* Animation */
+
+@keyframes pattern-animation-zig-zag {
+    from {
+        background-size: 4rem 4rem, 2rem 2rem;
+        /* background-position: 2rem 0, 4rem 0, 0 0, 0 0; */
+    }
+    to {
+        background-size: 5rem 5rem, 1rem 1rem;
+        /* background-position: 2rem 0, 2rem 0, 0 0, 0 0; */
+    }
+}
+
 /* PATTERNS */
 
 .grid {
@@ -468,6 +707,7 @@ ul li {
 /* DIfferent Grids */
 
 .grid-container {
+    margin-top: 2.8rem;
     display: grid;
 }
 
@@ -519,17 +759,17 @@ ul li {
 
 /* CLOCK */
 
-.clock-container{
+.clock-container {
     height: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--blue-1);
 }
 
-.clock-header{
+.clock-header {
     font-size: 20vh;
     color: white;
-    font-family: var(--nabla-display)
+    font-family: var(--nabla-display);
 }
 
 /* Footer */
@@ -556,22 +796,23 @@ ul li {
     text-align: center;
 }
 
-.btn{
+.btn {
     margin: 2rem;
-    color: white
+    color: white;
 }
 
-.right-shoe,.left-shoe{
+.right-shoe,
+.left-shoe {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
-.right-shoe{
+.right-shoe {
     background-image: url('./img/_right_shoe.png');
 }
 
-.left-shoe{
+.left-shoe {
     background-image: url('./img/_left_shoe.png');
 }

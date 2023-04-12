@@ -1,8 +1,6 @@
 import React from 'react'
 
 function GridComponent(props) {
-
-
     const gridLayoutOne = props.data.slice(0, 3)
     const gridItemOne1 = gridLayoutOne.slice(0, 1)
     const gridItemOne2 = gridLayoutOne.slice(1, 3)
@@ -17,53 +15,89 @@ function GridComponent(props) {
 
     const gridItemThree3 = gridLayoutThree.slice(3, 5)
 
-
     return (
         <div className="grid-container">
-
             <div className="grid-layout-wrapper-1">
-                {gridItemOne1 && gridItemOne1.map((item) => (
-                    <div key={item.id} className={props.regular ? item.pattern : item.gradient}>
-                    </div>
-                ))}
+                {gridItemOne1 &&
+                    gridItemOne1.map((item) => (
+                        <div
+                            key={item.id}
+                            className={
+                                props.regular ? item.pattern : item.gradient
+                            }
+                        ></div>
+                    ))}
 
                 <div className="grid-item-1">
-                    {gridItemOne2 && gridItemOne2.map((item) => (
-                        <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
-                        </div>
-                    ))}
+                    {gridItemOne2 &&
+                        gridItemOne2.map((item) => (
+                            <div
+                                key={item.id}
+                                className={
+                                    props.regular
+                                        ? item.pattern + ' grid'
+                                        : item.gradient + ' grid'
+                                }
+                            ></div>
+                        ))}
                 </div>
             </div>
 
             <div className="grid-layout-wrapper-2">
-                {gridLayoutTwo && gridLayoutTwo.map((item) => (
-                    <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
-                    </div>
-                ))}
+                {gridLayoutTwo &&
+                    gridLayoutTwo.map((item) => (
+                        <div
+                            key={item.id}
+                            className={
+                                props.regular
+                                    ? item.pattern + ' grid'
+                                    : item.gradient + ' grid'
+                            }
+                        ></div>
+                    ))}
             </div>
 
             <div className="grid-layout-wrapper-1">
-                {gridItemThree0 && gridItemThree0.map((item) => (
-                    <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
-                                                    {props.clock}
-                    </div>
-                ))}
-
-                <div className="grid-item-1">
-                    {gridItemThree1 && gridItemThree1.map((item) => (
-                        <div key={item.id} className={props.regular ? item.pattern : item.gradient }>
+                {gridItemThree0 &&
+                    gridItemThree0.map((item) => (
+                        <div
+                            key={item.id}
+                            className={
+                                props.regular
+                                    ? item.pattern + ' grid'
+                                    : item.gradient + ' grid'
+                            }
+                        >
+                            {props.clock}
                         </div>
                     ))}
+
+                <div className="grid-item-1">
+                    {gridItemThree1 &&
+                        gridItemThree1.map((item) => (
+                            <div
+                                key={item.id}
+                                className={
+                                    props.regular ? item.pattern : item.gradient
+                                }
+                            ></div>
+                        ))}
                 </div>
             </div>
 
             <div className="grid-layout-wrapper-2">
-                {gridItemThree3 && gridItemThree3.map((item) => (
-                    <div key={item.id} className={props.regular ? item.pattern + ' grid' : item.gradient + ' grid' }>
-                    </div>
-                ))}
+                {gridItemThree3 &&
+                    gridItemThree3.map((item) => (
+                        <div
+                            key={item.id}
+                            className={
+                                props.regular
+                                    ? item.pattern + ' grid'
+                                    : item.gradient + ' grid'
+                            }
+                        ></div>
+                    ))}
             </div>
-
         </div>
     )
 }

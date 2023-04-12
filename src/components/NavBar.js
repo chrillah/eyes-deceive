@@ -47,37 +47,37 @@ function NavBar() {
                             >
                                 <g>
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         x1="24.26"
                                         x2="24.26"
                                         y2="30"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         x1="20.56"
                                         x2="20.56"
                                         y2="30"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         x1="16.85"
                                         x2="16.85"
                                         y2="30"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         x1="13.15"
                                         x2="13.15"
                                         y2="30"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         x1="9.44"
                                         x2="9.44"
                                         y2="30"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         x1="5.74"
                                         x2="5.74"
                                         y2="30"
@@ -85,37 +85,37 @@ function NavBar() {
                                 </g>
                                 <g>
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         y1="5.74"
                                         x2="30"
                                         y2="5.74"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         y1="9.44"
                                         x2="30"
                                         y2="9.44"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         y1="13.15"
                                         x2="30"
                                         y2="13.15"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         y1="16.85"
                                         x2="30"
                                         y2="16.85"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         y1="20.56"
                                         x2="30"
                                         y2="20.56"
                                     />
                                     <line
-                                        className="cls-1"
+                                        className="home-grid-details"
                                         y1="24.26"
                                         x2="30"
                                         y2="24.26"

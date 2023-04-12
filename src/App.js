@@ -9,6 +9,7 @@ import OpticalIllusion from './pages/OpticalIllusion'
 import Test from './components/Clock'
 
 import { UserInfo } from './UserInfo'
+import Foot from './pages/Foot'
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/grid" element={<Grid />} />
                     <Route path="/spaced" element={<Spaced />} />
                     <Route path="/optical" element={<OpticalIllusion />} />
+                    <Route path="/foot/:side" element={<Foot />} />
                 </Routes>
             </UserInfo.Provider>
             <Footer />

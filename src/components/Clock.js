@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 
 function Clock() {
     const [time, setTime] = useState(new Date())
@@ -11,11 +12,17 @@ function Clock() {
     }, [])
     return (
         <div className="clock-container">
-            <h1 className="clock-header">
+            <ClockHeader>
                 {time.toLocaleTimeString([], { hour12: false })}
-            </h1>
+            </ClockHeader>
         </div>
     )
 }
 
 export default Clock
+
+const ClockHeader = styled.h1`
+    font-size: 20vh;
+    color: white;
+    font-family: var(--nabla-display)
+`

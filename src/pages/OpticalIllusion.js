@@ -4,11 +4,16 @@ import { UserInfo } from '../UserInfo'
 
 function OpticalIllusion() {
     const clock = useContext(UserInfo)
-  return (
-    <div>
-        <OpticalChoice choice={true} clock={clock}/>
-    </div>
-  )
+    const isTrue = true
+    return (
+        <div>
+            {isTrue ? (
+                <OpticalChoice choice={true} clock={clock} />
+            ) : (
+                <OpticalChoice choice={false} />
+            )}
+        </div>
+    )
 }
 
 export default OpticalIllusion

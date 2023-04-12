@@ -419,8 +419,14 @@ ul li {
     background-image: var(--gradient-5);
 }
 .gradient-bg-6 {
-    background-image: var(--gradient-6);
+    background-image: url('../src/img/optical_illusion.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    /* background-image: var(--gradient-6); */
+    overflow: hidden;
 }
+
 .gradient-bg-7 {
     background-image: var(--gradient-7);
     background-repeat: no-repeat;
@@ -538,9 +544,34 @@ ul li {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .footer-header {
     color: white;
     text-align: center;
+}
+
+.btn{
+    margin: 2rem;
+    color: white
+}
+
+.right-shoe,.left-shoe{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.right-shoe{
+    background-image: url('./img/_right_shoe.png');
+}
+
+.left-shoe{
+    background-image: url('./img/_left_shoe.png');
 }

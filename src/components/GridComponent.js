@@ -28,7 +28,7 @@ function GridComponent(props) {
                         >
                             <div className="grid-triangle-1">
                                 <svg
-                                    className={item.item === true ? "black-arrow" : "black-arrow black-arrow-spin"}
+                                    className={props.regular ? "black-arrow" : "black-arrow black-arrow-spin"}
                                     id="Layer_1"
                                     data-name="Layer 1"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ function GridComponent(props) {
                             className={
                                 props.regular
                                     ? item.pattern
-                                    : item.gradient 
+                                    : item.gradient
                             }
                         >
                             {props.clock}

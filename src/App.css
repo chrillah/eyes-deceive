@@ -518,11 +518,22 @@ ul li {
 }
 
 @keyframes pattern-animation-wave {
-    from {
+    0% {
         background-size: 3rem 5rem;
+        background-position: 0 0, 0 2.5rem;
     }
-    to {
+    20%{
+        background-color: var(--blue-1);
+    }
+    50%{
+        background-color: var(--light-purple-1);
+    }
+    80%{
+        background-color: var(--green-3);
+    }
+    100% {
         background-size: 1rem 5rem;
+        background-position: 0 0, 0 2.5rem;
     }
 }
 
@@ -546,11 +557,17 @@ ul li {
 }
 
 @keyframes pattern-animation-circles {
-    from {
+    0% {
         background-size: 3rem 3rem;
         background-position: center;
     }
-    to {
+    20%{
+        background-color: var(--white-1);
+    }
+    60%{
+        background-color: var(--neon-green-1);
+    }
+    100% {
         background-size: 1rem 2rem;
         background-position: center;
     }
@@ -589,6 +606,7 @@ ul li {
 }
 
 .grid-pattern-item-1 {
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,7 +616,7 @@ ul li {
 .grid-pattern-header-1 {
     text-align: center;
     color: var(--white-1);
-    font-size: 10vh;
+    font-size: 8vh;
     word-break: break-all;
 }
 
@@ -651,6 +669,9 @@ ul li {
 
 /* OK */
 .bg-pattern-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     --color-1: var(--black-1);
     --color-2: var(--white-1);
     background-color: var(--color-1);
@@ -674,6 +695,13 @@ ul li {
         background-position: center;
         /* background-position: 2rem 0, 2rem 0, 0 0, 0 0; */
     }
+}
+
+.grid-grid-header{
+    filter: invert(1);
+    mix-blend-mode: difference;
+    font-family: var(--major-mono-display);
+    font-size: 30vh;
 }
 
 /* OK */
@@ -700,13 +728,18 @@ ul li {
 /* Animation */
 
 @keyframes pattern-animation-zig-zag {
-    from {
+    0% {
         background-size: 4rem 4rem, 2rem 2rem;
-        /* background-position: 2rem 0, 4rem 0, 0 0, 0 0; */
+        background-position: center;
+        background-color: var(--white-1);
     }
-    to {
+    50%{
+        background-color: var(--neon-green-1);
+    }
+    100% {
         background-size: 5rem 5rem, 1rem 1rem;
-        /* background-position: 2rem 0, 2rem 0, 0 0, 0 0; */
+        background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+        background-color: var(--light-purple-1);
     }
 }
 

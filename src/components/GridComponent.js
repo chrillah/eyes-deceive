@@ -78,8 +78,8 @@ function GridComponent(props) {
                             key={item.id}
                             className={
                                 props.regular
-                                    ? item.pattern + ' grid'
-                                    : item.gradient + ' grid'
+                                    ? item.pattern + ' grid-pattern-item-1'
+                                    : item.gradient + ' grid-pattern-item-1'
                             }
                         >
                             <div className="grid-pattern-item-1">
@@ -96,8 +96,8 @@ function GridComponent(props) {
                             key={item.id}
                             className={
                                 props.regular
-                                    ? item.pattern + ' grid'
-                                    : item.gradient + ' grid'
+                                    ? item.pattern
+                                    : item.gradient 
                             }
                         >
                             {props.clock}
@@ -113,7 +113,9 @@ function GridComponent(props) {
                                 className={
                                     props.regular ? item.pattern : item.gradient
                                 }
-                            ></div>
+                            >
+                                <h1 className='grid-grid-header'>{item.typography}</h1>
+                            </div>
                         ))}
                 </div>
             </div>

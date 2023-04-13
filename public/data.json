@@ -19,7 +19,7 @@
         "id" : 4,
         "pattern" : "bg-pattern-dots",
         "gradient" : "bg-pattern-dots bg-animated-dots",
-        "typography" : "þïñk¥ Öµ†"
+        "typography" : ""
     },
     {
         "id" : 5,
@@ -35,21 +35,23 @@
     {
         "id" : 7,
         "pattern" : "bg-pattern-zig-zag",
-        "gradient" : "gradient-bg-7"
+        "gradient" : "bg-pattern-zig-zag bg-animated-zig-zag",
+        "typography" : ""
     },
     {
         "id" : 8,
         "pattern" : "bg-pattern-grid",
-        "gradient" : "gradient-bg-8"
+        "gradient" : "bg-pattern-grid bg-animated-grid",
+        "typography" : "S"
     },
     {
         "id" : 9,
-        "pattern" : "bg-ver-rand",
-        "gradient" : "gradient-bg-9"
+        "pattern" : "bg-pattern-wave",
+        "gradient" : "bg-pattern-wave bg-animated-wave"
     },
     {
         "id" : 10,
-        "pattern" : "bg-zick-zack",
-        "gradient" : "gradient-bg-10"
+        "pattern" : "bg-pattern-circles",
+        "gradient" : "bg-pattern-circles bg-animated-circles"
     }
 ]

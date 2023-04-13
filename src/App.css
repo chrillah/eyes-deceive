@@ -49,13 +49,13 @@
     --pastel-green-1: #6fbfb1;
     --pastel-yellow-1: #f2cd5c;
 
-    --gradient-1: linear-gradient(
-        45deg,
+    --gradient-1: radial-gradient(
+        circle,
         var(--pink-1),
         var(--purple-1),
-        var(--green-1),
+        transparent,
         var(--yellow-1),
-        var(--orange-1)
+        transparent
     );
     --gradient-2: linear-gradient(
         45deg,
@@ -99,8 +99,11 @@
     );
     --gradient-7: radial-gradient(
         circle,
+        var(--yellow-1) 10%,
         var(--pink-1) 20%,
+        var(--neon-green-1) 30%,
         var(--blue-2) 40%,
+        var(--light-purple-1) 50%,
         var(--pastel-yellow-1) 60%,
         var(--purple-2) 80%,
         var(--neon-green-1) 100%
@@ -227,40 +230,92 @@ ul li {
     width: 30px;
 }
 
-/* Hero */
-/* .hero-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--pink-1);
-} */
+.hero-wrapper {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-size: 5rem 5rem;
+    background-position: 5.25rem 5.25rem, 2.5rem 2.5rem, 2.5rem 2.5rem;
+    background-image: radial-gradient(
+            circle,
+            transparent 1rem,
+            var(--color-1) 1rem
+        ),
+        linear-gradient(var(--color-2) 0.5rem, transparent 0.5rem),
+        linear-gradient(90deg, var(--color-2) 0.5rem, transparent 0.5rem);
+    transition: background-size ease-in 5s;
+}
+
+.hero-animated-cross {
+    animation: pattern-animation-cross 10000ms infinite alternate;
+}
+
 .hero-container {
+    background-size: 800%;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: var(--gradient-1);
-    background-size: 400%;
-    animation: gradient-animation 25s infinite alternate;
 }
 
-.gradient-container-1 {
-    height: 100%;
-    width: 100%;
+.crazy-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-image: var(--gradient-1);
+    background-size: 800%;
+    animation: gradient-animation 5s infinite alternate;
+    transition: background-size 8000ms ease-out;
 }
 
 @keyframes gradient-animation {
     0% {
-        background-position: left;
+        background-size: 800%;
     }
     100% {
-        background-position: right;
+        background-size: 100%;
+    }
+}
+
+/* OK */
+.bg-pattern-cross {
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-size: 5rem 5rem;
+    background-position: 5.25rem 5.25rem, 2.5rem 2.5rem, 2.5rem 2.5rem;
+    background-image: radial-gradient(
+            circle,
+            transparent 1rem,
+            var(--color-1) 1rem
+        ),
+        linear-gradient(var(--color-2) 0.5rem, transparent 0.5rem),
+        linear-gradient(90deg, var(--color-2) 0.5rem, transparent 0.5rem);
+}
+
+.bg-animated-cross {
+    animation: pattern-animation-cross 10000ms infinite alternate;
+}
+
+@keyframes pattern-animation-cross {
+    from {
+        background-size: 5rem 5rem;
+        background-position: center;
+    }
+    to {
+        background-size: 2rem 2rem, 1rem 1rem, 1rem 1rem;
+        background-position: center;
     }
 }
 
 .eye-lid,
 .open-eye {
+    cursor: pointer;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,17 +383,6 @@ ul li {
     stroke-width: 2px;
 }
 
-/* Crazy-corner */
-.crazy-header {
-    color: red;
-    margin-top: 15rem;
-    font-size: large;
-}
-
-.item-test {
-    color: red;
-    font-size: 2rem;
-}
 /* NEW! Patterns */
 .bg-pattern-1 {
     --color-1: var(--black-1);
@@ -416,10 +460,6 @@ ul li {
 .black-arrow {
     rotate: 45deg;
     transform-origin: center;
-    /* position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 30%); */
     width: 40vw;
 }
 
@@ -430,7 +470,7 @@ ul li {
     stroke-width: 1px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .grid-triangle-1 {
         margin-top: 4rem;
     }
@@ -451,7 +491,7 @@ ul li {
 }
 
 .bg-color-circle {
-    background-color: var(--light-purple-1);
+    background-color: var(--purple-2);
 }
 
 .bg-color-circle-2 {
@@ -462,7 +502,7 @@ ul li {
     background-image: var(--gradient-7);
     background-repeat: no-repeat;
     background-position: center;
-    animation: bg-color-animated-circle 10000ms infinite alternate;
+    animation: bg-color-animated-circle 8000ms infinite alternate;
 }
 
 @keyframes bg-color-animated-circle {
@@ -545,13 +585,13 @@ ul li {
         background-size: 3rem 5rem;
         background-position: 0 0, 0 2.5rem;
     }
-    20%{
+    20% {
         background-color: var(--blue-1);
     }
-    50%{
+    50% {
         background-color: var(--light-purple-1);
     }
-    80%{
+    80% {
         background-color: var(--green-3);
     }
     100% {
@@ -562,7 +602,7 @@ ul li {
 
 /* OK */
 .bg-pattern-circles {
-    --color-1: var(--black-1);
+    --color-1: var(--pastel-green-1);
     --color-2: var(--white-1);
     background-color: var(--color-1);
     background-image: radial-gradient(
@@ -584,10 +624,10 @@ ul li {
         background-size: 3rem 3rem;
         background-position: center;
     }
-    20%{
+    20% {
         background-color: var(--white-1);
     }
-    60%{
+    60% {
         background-color: var(--neon-green-1);
     }
     100% {
@@ -649,7 +689,7 @@ ul li {
 }
 
 .bg-animated-gradient-1 {
-    animation: bg-animated-gradient-1 infinite alternate 1000ms;
+    animation: bg-animated-gradient-1 infinite alternate 10000ms;
 }
 
 @keyframes bg-animated-gradient-1 {
@@ -658,35 +698,6 @@ ul li {
     }
     to {
         background-position: left;
-    }
-}
-
-/* OK */
-.bg-pattern-cross {
-    --color-1: var(--black-1);
-    --color-2: var(--white-1);
-    background-color: var(--color-1);
-    background-size: 5rem 5rem;
-    background-position: 5.25rem 5.25rem, 2.5rem 2.5rem, 2.5rem 2.5rem;
-    background-image: radial-gradient(
-            circle,
-            transparent 1rem,
-            var(--color-1) 1rem
-        ),
-        linear-gradient(var(--color-2) 0.5rem, transparent 0.5rem),
-        linear-gradient(90deg, var(--color-2) 0.5rem, transparent 0.5rem);
-}
-
-.bg-animated-cross {
-    animation: pattern-animation-cross 10000ms infinite alternate;
-}
-
-@keyframes pattern-animation-cross {
-    from {
-        background-size: 5rem 5rem;
-    }
-    to {
-        background-size: 2rem 2rem, 1rem 1rem, 1rem 1rem;
     }
 }
 
@@ -720,18 +731,17 @@ ul li {
     }
 }
 
-.grid-grid-header{
+.grid-grid-header {
     filter: invert(1);
     mix-blend-mode: difference;
     font-family: var(--major-mono-display);
     font-size: 20vh;
 }
 
-@media (min-width: 425px){
-    .grid-grid-header{
+@media (min-width: 425px) {
+    .grid-grid-header {
         font-size: 30vh;
     }
-
 }
 
 /* OK */
@@ -763,7 +773,7 @@ ul li {
         background-position: center;
         background-color: var(--white-1);
     }
-    50%{
+    50% {
         background-color: var(--neon-green-1);
     }
     100% {
@@ -778,125 +788,6 @@ ul li {
 .grid {
     height: 300px;
     /* width: 100px; */
-}
-
-.regular {
-    background-image: var(--gradient-1);
-}
-
-/* .bg-hori-rand {
-    background-image: url('../src/img/_hori-rand.png');
-} */
-
-/* .bg-liggande-triangel {
-    background-image: url('../src/img/_liggande-triangel.png');
-} */
-
-/* .bg-prick {
-    background-image: url('../src/img/_prick.png');
-} */
-
-/* .bg-ruta {
-    background-image: url('../src/img/_ruta.png');
-} */
-
-/* .bg-stående-triangel {
-    background-image: url('../src/img/_stående-triangel.png');
-} */
-
-.bg-tintin-rutor {
-    background-image: url('../src/img/_tintin-rutor.png');
-}
-
-.bg-vågor {
-    background-image: url('../src/img/_vågor.png');
-}
-
-.bg-vanliga-zick-zack {
-    background-image: url('../src/img/_vanliga-zick-zack.png');
-}
-
-.bg-ver-rand {
-    background-image: url('../src/img/_ver-rand.png');
-}
-
-.bg-zick-zack {
-    background-color: var(--light-purple-1);
-    background-image: url('../src/img/_zick-zack.png');
-    background-size: 10%;
-    animation: moving-zick-zack 10000ms infinite alternate;
-}
-
-@keyframes moving-zick-zack {
-    from {
-        background-position: top;
-    }
-    to {
-        background-position: bottom;
-    }
-}
-
-.gradient-bg-1 {
-    background-image: var(--gradient-1);
-}
-.gradient-bg-2 {
-    background-image: var(--gradient-2);
-}
-.gradient-bg-3 {
-    background-image: var(--gradient-3);
-}
-
-.gradient-bg-4 {
-    background-image: var(--gradient-4);
-}
-.gradient-bg-5 {
-    background-image: var(--gradient-5);
-}
-.gradient-bg-6 {
-    background-image: url('../src/img/optical_illusion.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200%;
-    /* background-image: var(--gradient-6); */
-    overflow: hidden;
-}
-
-.gradient-bg-7 {
-    background-image: var(--gradient-7);
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: moving-gradient-7 10000ms infinite alternate;
-}
-
-@keyframes moving-gradient-7 {
-    from {
-        background-size: 100%;
-    }
-
-    to {
-        background-size: 200%;
-    }
-}
-
-.gradient-bg-8 {
-    background-image: var(--gradient-8);
-    background-size: 200%;
-    animation: moving-gradient-8 infinite alternate 12000ms;
-}
-
-@keyframes moving-gradient-8 {
-    from {
-        background-position: right;
-    }
-    to {
-        background-position: left;
-    }
-}
-.gradient-bg-9 {
-    background-image: var(--gradient-9);
-}
-.gradient-bg-10 {
-    background-image: var(--gradient-10);
 }
 
 /* DIfferent Grids */
@@ -918,7 +809,6 @@ ul li {
     grid-template-rows: 1fr;
 }
 
-/* in progress */
 .grid-layout-wrapper-2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -944,16 +834,6 @@ ul li {
     }
 }
 
-/* Spaced */
-.spaced-wrapper {
-    background-color: var(--blue-1);
-    margin-top: 2rem;
-    min-height: 100vh;
-    background-image: url('../src/img/optical_illusion.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* CLOCK */
 
@@ -976,13 +856,13 @@ ul li {
     }
 }
 
-.clock-pattern{
+.clock-pattern {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clock-typography{
+.clock-typography {
     font-size: 10vh;
     text-align: center;
     animation: spinning-tic-tac 60000ms infinite linear;
@@ -1022,55 +902,61 @@ ul li {
 }
 
 .foot-wrapper-left,
-.foot-wrapper-right{
+.foot-wrapper-right {
     padding-top: 3rem;
 }
 
-.foot-wrapper-right{
+.foot-wrapper-right {
     background-image: url('../src/img/_vågor.png');
     background-color: var(--orange-1);
     animation: switch-color-right infinite linear 8000ms;
 }
 
 @keyframes switch-color-right {
-    0%{
+    0% {
         background-color: var(--orange-1);
         background-position: right;
     }
-    25%{
+    25% {
         background-color: var(--red-1);
-    } 50%{
+    }
+    50% {
         background-color: var(--pastel-yellow-1);
-    } 75%{
+    }
+    75% {
         background-color: var(--light-blue-1);
-    } 100%{
+    }
+    100% {
         background-color: var(--pastel-green-1);
     }
 }
 
-.foot-wrapper-left{
+.foot-wrapper-left {
     background-image: url('../src/img/_tintin-rutor.png');
     background-color: var(--neon-green-1);
     animation: switch-color-left infinite linear 8000ms;
 }
 
 @keyframes switch-color-left {
-    0%{
+    0% {
         background-color: var(--neon-green-1);
         background-position: left;
     }
-    25%{
+    25% {
         background-color: var(--blue-2);
-    } 50%{
+    }
+    50% {
         background-color: var(--light-purple-1);
-    } 75%{
+    }
+    75% {
         background-color: var(--purple-1);
-    } 100%{
+    }
+    100% {
         background-color: var(--pink-3);
     }
 }
 
-.btn-container{
+.btn-container {
     margin: 0 auto;
     max-width: 800px;
     display: grid;
@@ -1089,13 +975,13 @@ ul li {
 
 @media (min-width: 768px) {
     .right-shoe,
-.left-shoe {
-    rotate: 0deg;
-    min-height: 93vh;
-}
+    .left-shoe {
+        rotate: 0deg;
+        min-height: 93vh;
+    }
 }
 
-.shoe{
+.shoe {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1105,7 +991,7 @@ ul li {
 }
 
 @media (min-width: 768px) {
-    .shoe{
+    .shoe {
         height: 200px;
     }
 }

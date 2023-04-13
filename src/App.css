@@ -475,18 +475,20 @@ ul li {
         margin-top: 4rem;
     }
     .black-arrow {
-        transform-origin: center;
         width: 30vw;
     }
 }
 
 .black-arrow-spin {
-    animation: spin-black-arrow infinite linear 800ms;
+    animation: spin-black-arrow infinite alternate linear 8000ms;
 }
 
 @keyframes spin-black-arrow {
+    from {
+        rotate: 90deg;
+    }
     to {
-        rotate: 360deg;
+        rotate: 45deg;
     }
 }
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg className="black-arrow" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.71 46.93">
+  <defs>
+    <style>
+      .black-arrow-details {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polyline id="POINT" class="cls-1" points="23.82 .35 .71 23.46 23.82 46.57"/>
+  <line id="LINE" class="cls-1" x1=".71" y1="23.46" x2="50.71" y2="23.46"/>
+</svg>

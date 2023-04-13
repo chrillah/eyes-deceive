@@ -25,7 +25,31 @@ function GridComponent(props) {
                             className={
                                 props.regular ? item.pattern : item.gradient
                             }
-                        ></div>
+                        >
+                            <div className="grid-triangle-1">
+                                <svg
+                                    className={item.item === true ? "black-arrow" : "black-arrow black-arrow-spin"}
+                                    id="Layer_1"
+                                    data-name="Layer 1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 55.00 55.00"
+                                >
+                                    <polyline
+                                        id="POINT"
+                                        className="black-arrow-details"
+                                        points="23.82 .35 .71 23.46 23.82 46.57"
+                                    />
+                                    <line
+                                        id="LINE"
+                                        className="black-arrow-details"
+                                        x1=".71"
+                                        y1="23.46"
+                                        x2="50.71"
+                                        y2="23.46"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
                     ))}
 
                 <div className="grid-item-1">
@@ -35,10 +59,14 @@ function GridComponent(props) {
                                 key={item.id}
                                 className={
                                     props.regular
-                                        ? item.pattern + ' grid'
-                                        : item.gradient + ' grid'
+                                        ? item.pattern + ' grid-color-1-container'
+                                        : item.gradient + ' grid-color-1-container'
                                 }
-                            ></div>
+                            >
+                                <div className="grid-color-1">
+                                    <div className="grid-inner-color-1" />
+                                </div>
+                            </div>
                         ))}
                 </div>
             </div>
@@ -53,7 +81,11 @@ function GridComponent(props) {
                                     ? item.pattern + ' grid'
                                     : item.gradient + ' grid'
                             }
-                        ></div>
+                        >
+                            <div className="grid-pattern-item-1">
+                                <h1 className='grid-pattern-header-1'>{item.typography}</h1>
+                            </div>
+                        </div>
                     ))}
             </div>
 
@@ -69,6 +101,7 @@ function GridComponent(props) {
                             }
                         >
                             {props.clock}
+                            {props.regular ? '' : <div className='clock-pattern'><h1 className='clock-typography'>T͓̊i͓̊c͓̊ T͓̊å͓c͓̊</h1></div>}
                         </div>
                     ))}
 

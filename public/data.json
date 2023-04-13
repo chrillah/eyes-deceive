@@ -1,42 +1,45 @@
 [
     {
         "id" : 1,
-        "pattern" : "bg-pattern-zig-zag",
-        "gradient" : "gradient-bg-1"
+        "pattern" : "bg-pattern-triangles",
+        "gradient" : "bg-pattern-triangles bg-animated-triangles",
+        "item" : true
     },
     {
         "id" : 2,
-        "pattern" : "bg-pattern-cross",
-        "gradient" : "gradient-bg-2"
+        "pattern" : "bg-color-circle",
+        "gradient" : "bg-color-animated-circle"
     },
     {
         "id" : 3,
-        "pattern" : "bg-pattern-dots",
-        "gradient" : "gradient-bg-3"
+        "pattern" : "bg-color-circle-2",
+        "gradient" : "bg-color-animated-circle"
     },
     {
         "id" : 4,
-        "pattern" : "bg-ruta",
-        "gradient" : "gradient-bg-4"
+        "pattern" : "bg-pattern-dots",
+        "gradient" : "bg-pattern-dots bg-animated-dots",
+        "typography" : "þïñk¥ Öµ†"
     },
     {
         "id" : 5,
-        "pattern" : "bg-stående-triangel",
-        "gradient" : "gradient-bg-5"
+        "pattern" : "bg-gradient-1",
+        "gradient" : "bg-gradient-1 bg-animated-gradient-1",
+        "typography" : "ℚ⌰⟟⍧⏧ ⍓⍲⍑ℍ⎎"
     },
     {
         "id" : 6,
-        "pattern" : "bg-tintin-rutor",
-        "gradient" : "gradient-bg-6"
+        "pattern" : "clock",
+        "gradient" : "clock-pattern"
     },
     {
         "id" : 7,
-        "pattern" : "bg-vågor",
+        "pattern" : "bg-pattern-zig-zag",
         "gradient" : "gradient-bg-7"
     },
     {
         "id" : 8,
-        "pattern" : "bg-vanliga-zick-zack",
+        "pattern" : "bg-pattern-grid",
         "gradient" : "gradient-bg-8"
     },
     {

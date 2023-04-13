@@ -22,7 +22,9 @@ function Clock() {
 export default Clock
 
 const ClockHeader = styled.h1`
-    font-size: 20vh;
-    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+    font-size: 10vh;
     font-family: var(--nabla-display)
 `

@@ -344,26 +344,24 @@ ul li {
     --color-1: var(--black-1);
     --color-2: var(--white-1);
     background-color: var(--color-2);
-    background-image:
-    conic-gradient(
-        from 330deg at 50% 60%,
-        var(--color-1) 60deg,
-        transparent 60deg
+    background-image: conic-gradient(
+            from 330deg at 50% 60%,
+            var(--color-1) 60deg,
+            transparent 60deg
         ),
-    conic-gradient(
-        from 150deg at 50% 30%,
-        var(--color-1) 60deg,
-        transparent 60deg
-        )
-    ;
-    background-position: 0 0, 1.5rem -.5rem;
+        conic-gradient(
+            from 150deg at 50% 30%,
+            var(--color-1) 60deg,
+            transparent 60deg
+        );
+    background-position: 0 0, 1.5rem -0.5rem;
     background-size: 3rem 3rem;
     animation: pattern-animation-1 10000ms infinite alternate;
 }
 
 @keyframes pattern-animation-1 {
     from {
-        background-position: 0 0, 1.5rem -.5rem;
+        background-position: 0 0, 1.5rem -0.5rem;
         background-size: 3rem 3rem;
     }
     to {
@@ -374,35 +372,122 @@ ul li {
 
 /* OK */
 .bg-pattern-triangles {
-    --color-1: var(--black-1);
-    --color-2: var(--white-1);
+    --color-1: var(--pastel-green-1);
+    --color-2: var(--purple-2);
     background-color: var(--color-2);
-    background-image:
-    conic-gradient(
-        from 330deg at 50% 60%,
-        var(--color-1) 60deg,
-        transparent 60deg
+    background-image: conic-gradient(
+            from 330deg at 50% 60%,
+            var(--color-1) 60deg,
+            transparent 60deg
         ),
-    conic-gradient(
-        from 150deg at 50% 30%,
-        var(--color-1) 60deg,
-        transparent 60deg
-        )
-    ;
-    background-position: 0 0, 1.5rem -.5rem;
+        conic-gradient(
+            from 150deg at 50% 30%,
+            var(--color-1) 60deg,
+            transparent 60deg
+        );
+    background-position: 0 0, 1.5rem -0.5rem;
     background-size: 3rem 3rem;
-    animation: pattern-animation-1 10000ms infinite alternate;
+}
+
+.bg-animated-triangles {
+    animation: pattern-animation-1 8000ms infinite alternate;
 }
 
 @keyframes pattern-animation-triangles {
     from {
-        background-position: 0 0, 1.5rem -.5rem;
+        background-position: 0 0, 1.5rem -0.5rem;
         background-size: 3rem 3rem;
     }
     to {
-        background-position: 1 0, 1rem 0;
+        background-position: -1rem 3rem, 1rem 1rem;
         background-size: 5rem 1rem;
     }
+}
+
+.grid-triangle-1 {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.black-arrow {
+    transform-origin: center;
+    /* position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 30%); */
+    width: 30vw;
+}
+
+.black-arrow-details {
+    fill: none;
+    stroke: var(--white-1);
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+
+.black-arrow-spin {
+    animation: spin-black-arrow infinite linear 800ms;
+}
+
+@keyframes spin-black-arrow {
+    to {
+        rotate: 360deg;
+    }
+}
+
+.bg-color-circle {
+    background-color: var(--light-purple-1);
+}
+
+.bg-color-circle-2 {
+    background-color: var(--pastel-green-1);
+}
+
+.bg-color-animated-circle {
+    background-image: var(--gradient-7);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: bg-color-animated-circle 10000ms infinite alternate;
+}
+
+@keyframes bg-color-animated-circle {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 400%;
+    }
+}
+
+.grid-color-1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid-color-1 {
+    background-color: var(--black-1);
+    min-height: 280px;
+    min-width: 280px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-inner-color-1 {
+    background-color: var(--white-1);
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 /* OK */
@@ -426,7 +511,9 @@ ul li {
         );
     background-size: 3rem 5rem;
     background-position: 0 0, 0 2.5rem;
+}
 
+.bg-animated-wave {
     animation: pattern-animation-wave 10000ms infinite alternate;
 }
 
@@ -452,7 +539,9 @@ ul li {
         transparent 1.5rem
     );
     background-size: 3rem 3rem;
+}
 
+.bg-animated-circles {
     animation: pattern-animation-circles 4000ms infinite alternate;
 }
 
@@ -470,7 +559,7 @@ ul li {
 /* OK */
 .bg-pattern-dots {
     --color-1: var(--black-1);
-    --color-2: var(--white-1);
+    --color-2: var(--green-3);
     background-color: var(--color-1);
     background-image: radial-gradient(
         circle,
@@ -482,18 +571,52 @@ ul li {
         transparent 5rem
     );
     background-size: 3rem 3rem;
+}
 
-    animation: pattern-animation-dots 3000ms infinite alternate;
+.bg-animated-dots {
+    animation: pattern-animation-dots 6000ms infinite alternate;
 }
 
 @keyframes pattern-animation-dots {
     from {
         background-size: 3rem 3rem;
-        background-position: right bottom;
+        background-position: center bottom;
     }
     to {
-        background-size: 2rem 2rem;
-        background-position: left top;
+        background-size: 1rem 5rem;
+        background-position: center top;
+    }
+}
+
+.grid-pattern-item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-pattern-header-1 {
+    text-align: center;
+    color: var(--white-1);
+    font-size: 10vh;
+    word-break: break-all;
+}
+
+.bg-gradient-1 {
+    background-image: var(--gradient-5);
+    background-size: 300%;
+}
+
+.bg-animated-gradient-1 {
+    animation: bg-animated-gradient-1 infinite alternate 1000ms;
+}
+
+@keyframes bg-animated-gradient-1 {
+    from {
+        background-position: right;
+    }
+    to {
+        background-position: left;
     }
 }
 
@@ -511,6 +634,9 @@ ul li {
         ),
         linear-gradient(var(--color-2) 0.5rem, transparent 0.5rem),
         linear-gradient(90deg, var(--color-2) 0.5rem, transparent 0.5rem);
+}
+
+.bg-animated-cross {
     animation: pattern-animation-cross 10000ms infinite alternate;
 }
 
@@ -531,6 +657,9 @@ ul li {
     background-size: 3rem 3rem;
     background-image: linear-gradient(var(--color-2) 0.1rem, transparent 0.1rem),
         linear-gradient(90deg, var(--color-2) 0.1rem, transparent 0.1rem);
+}
+
+.bg-animated-grid {
     animation: pattern-animation-1 4000ms infinite alternate;
 }
 
@@ -562,6 +691,9 @@ ul li {
         linear-gradient(45deg, transparent 75%, var(--color-1) 75%),
         linear-gradient(-135deg, transparent 75%, var(--color-1) 75%),
         linear-gradient(135deg, transparent 75%, var(--color-1) 75%);
+}
+
+.bg-animated-zig-zag {
     animation: pattern-animation-zig-zag 5000ms infinite alternate;
 }
 
@@ -578,7 +710,7 @@ ul li {
     }
 }
 
-/* PATTERNS */
+/* GRID_TEMPLATE */
 
 .grid {
     height: 300px;
@@ -735,6 +867,9 @@ ul li {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    .grid-triangle-1 {
+        margin-top: 10rem;
+    }
     .grid-item-1 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -763,13 +898,34 @@ ul li {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--blue-1);
+    background-color: var(--pink-2);
 }
 
 .clock-header {
     font-size: 20vh;
     color: white;
     font-family: var(--nabla-display);
+}
+
+.clock-pattern{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-typography{
+    font-size: 10vh;
+    text-align: center;
+    animation: spinning-tic-tac 60000ms infinite linear;
+}
+
+@keyframes spinning-tic-tac {
+    from {
+        rotate: 0;
+    }
+    to {
+        rotate: 360deg;
+    }
 }
 
 /* Footer */

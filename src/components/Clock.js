@@ -25,6 +25,6 @@ const ClockHeader = styled.h1`
 display: flex;
 justify-content: center;
 align-items: center;
-    font-size: 10vh;
+    font-size: 8vh;
     font-family: var(--nabla-display)
 `

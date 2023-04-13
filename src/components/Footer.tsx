@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer className='footer-bar' >
-        <div className="img-container">
-            <div className="btn-container">
-                <Link className='btn' to="/foot/left" >LEFT</Link>
-                <Link className='btn' to="/foot/right" >RIGHT</Link>
+                    <div className="btn-container">
+                <Link to="/foot/left" >
+                    <div className="left shoe"></div>
+                </Link>
+                <Link  to="/foot/right" >
+                <div className="right shoe"></div>
+                </Link>
             </div>
-        </div>
     </footer>
   )
 }

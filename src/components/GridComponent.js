@@ -69,9 +69,19 @@ function GridComponent(props) {
                                           ' grid-color-1-container'
                                 }
                             >
-                                <div className="grid-color-1">
-                                    <div className="grid-inner-color-1" />
-                                </div>
+                                {item.typography === 'circle' ? (
+                                    <div className="grid-color-1">
+                                        <div className="grid-inner-color-1" />
+                                    </div>
+                                ) : (
+                                    <a
+                                        class="cross-btn"
+                                        href="https://www.youtube.com/watch?v=pIvTdPBFY6I&ab_channel=FadetoMind"
+                                        target="_blanc"
+                                    >
+                                        ⌀
+                                    </a>
+                                )}
                             </div>
                         ))}
                 </div>

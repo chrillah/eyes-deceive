@@ -8,12 +8,13 @@
     {
         "id" : 2,
         "pattern" : "bg-color-circle",
-        "gradient" : "bg-color-animated-circle"
+        "gradient" : "bg-color-animated-circle",
+        "typography" : "circle"
     },
     {
         "id" : 3,
-        "pattern" : "bg-color-circle-2",
-        "gradient" : "bg-color-animated-circle"
+        "pattern" : "bg-pattern-cross",
+        "gradient" : "bg-pattern-cross  bg-animated-cross"
     },
     {
         "id" : 4,

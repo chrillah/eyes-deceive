@@ -83,7 +83,7 @@ function GridComponent(props) {
                             }
                         >
                             <div className="grid-pattern-item-1">
-                                <h1 className='grid-pattern-header-1'>{item.typography}</h1>
+                                {item.typography === '' ? <a href='https://www.youtube.com/watch?v=kSo6LT0xPSQ&ab_channel=Windows96-Topic' target='_blanc' className="dots-btn">🝏🜹</a>: <h1 className='grid-pattern-header-1'>{item.typography}</h1>}
                             </div>
                         </div>
                     ))}
@@ -114,7 +114,7 @@ function GridComponent(props) {
                                     props.regular ? item.pattern : item.gradient
                                 }
                             >
-                                <h1 className='grid-grid-header'>{item.typography}</h1>
+                                {item.typography === '' ? <a href='https://www.youtube.com/watch?v=CEaRON-XP3g&ab_channel=Vaperror-Topic' target='_blanc' className="zig-zag-btn">△</a> : <h1 className='grid-grid-header'>{item.typography}</h1> }
                             </div>
                         ))}
                 </div>
@@ -127,10 +127,12 @@ function GridComponent(props) {
                             key={item.id}
                             className={
                                 props.regular
-                                    ? item.pattern + ' grid'
-                                    : item.gradient + ' grid'
+                                    ? item.pattern + ' grid-pattern-item-1'
+                                    : item.gradient + ' grid-pattern-item-1'
                             }
-                        ></div>
+                        >
+                            <a href={item.link} target='_blanc' className={item.id === 9 ? "wave-btn" : "circle-btn"}>{item.typography}</a>
+                        </div>
                     ))}
             </div>
         </div>

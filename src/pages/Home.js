@@ -5,6 +5,7 @@ function Home() {
     const [eyeClass, setEyeClass] = useState(true)
     const [crazyClass, setCrazyClass] = useState(true)
     const [crossClass, setCrossClass] = useState(true)
+    const [isHovering, setIsHovering] = useState(false)
 
     function openEye() {
         setEyeClass(!eyeClass)
@@ -20,12 +21,22 @@ function Home() {
         setCrossClass(!crossClass)
     }
 
+    function handleHover(){
+        // setIsHovering(true)
+        console.log('hover')
+    }
+
+    function handleLeave(){
+        // setIsHovering(false)
+    }
+
     const eye = eyeClass ? 'eye-lid' : 'open-eye'
     const crazy = crazyClass ? 'hero-container' : 'crazy-container'
     const cross = crossClass ? 'hero-wrapper' : 'hero-wrapper hero-animated-cross'
     return (
         <div className={cross}>
             <div className={crazy}>
+            <div onMouseEnter={handleHover} onMouseLeave={handleLeave} className="hover-area" />
                 <div onClick={openEye} className={eye}>
                     <Link to="/spaced">
                         <div className="eye">
@@ -128,6 +139,7 @@ function Home() {
                         </div>
                     </Link>
                 </div>
+                <div onMouseEnter={handleHover} onMouseLeave={handleLeave} className="hover-area" />
             </div>
         </div>
     )

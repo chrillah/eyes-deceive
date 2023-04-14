@@ -47,11 +47,15 @@
     {
         "id" : 9,
         "pattern" : "bg-pattern-wave",
-        "gradient" : "bg-pattern-wave bg-animated-wave"
+        "gradient" : "bg-pattern-wave bg-animated-wave",
+        "typography" : "ツ",
+        "link" : "https://www.youtube.com/watch?v=Xmx0uNbqPZY&ab_channel=ElectronicGems"
     },
     {
         "id" : 10,
         "pattern" : "bg-pattern-circles",
-        "gradient" : "bg-pattern-circles bg-animated-circles"
+        "gradient" : "bg-pattern-circles bg-animated-circles",
+        "typography" : "🜯",
+        "link" : "https://www.youtube.com/watch?v=fHiO2HTGUcA&ab_channel=tswenner"
     }
 ]

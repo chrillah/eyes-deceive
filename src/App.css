@@ -135,7 +135,7 @@
 }
 
 /* Global settings */
-* {
+body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -146,6 +146,10 @@ ul {
 }
 ul li {
     list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .gradient-container-1 {
@@ -177,7 +181,7 @@ ul li {
 }
 
 .nav-btn-container {
-    padding: 0.3rem;
+    padding: .3rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +225,7 @@ ul li {
 
 .home-grid-details {
     fill: none;
-    stroke: #000;
+    stroke: var(--black-1);
     stroke-miterlimit: 10;
 }
 
@@ -257,6 +261,7 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: var(--gradient-1);
 }
 
@@ -383,6 +388,13 @@ ul li {
     stroke-width: 2px;
 }
 
+.hover-area{
+    margin-top: 1rem;
+    height: 20%;
+    width: 100%;
+}
+
+
 /* NEW! Patterns */
 .bg-pattern-1 {
     --color-1: var(--black-1);
@@ -416,6 +428,7 @@ ul li {
 
 /* OK */
 .bg-pattern-triangles {
+    border-radius: 10px;
     --color-1: var(--pastel-green-1);
     --color-2: var(--purple-2);
     background-color: var(--color-2);
@@ -434,17 +447,22 @@ ul li {
 }
 
 .bg-animated-triangles {
-    animation: pattern-animation-1 8000ms infinite alternate;
+    animation: pattern-animation-triangles 8000ms infinite alternate;
 }
 
 @keyframes pattern-animation-triangles {
-    from {
+    0% {
         background-position: 0 0, 1.5rem -0.5rem;
         background-size: 3rem 3rem;
     }
-    to {
+    50%{
+        background-color: var(--neon-green-1);
+        background-position: 5rem 0, 1.5rem -0.5rem;
+        background-size: center;
+    }
+    100% {
         background-position: -1rem 3rem, 1rem 1rem;
-        background-size: 5rem 1rem;
+        background-size: 1rem 1rem;
     }
 }
 
@@ -455,12 +473,13 @@ ul li {
     align-items: center;
     flex-direction: column;
     position: relative;
+    min-height: 50vh;
 }
 
 .black-arrow {
     rotate: 45deg;
     transform-origin: center;
-    width: 40vw;
+    width: 50vw;
 }
 
 .black-arrow-details {
@@ -472,7 +491,8 @@ ul li {
 
 @media (min-width: 768px) {
     .grid-triangle-1 {
-        margin-top: 4rem;
+        min-height: 100vh;
+        margin-top: 2rem;
     }
     .black-arrow {
         width: 30vw;
@@ -493,11 +513,14 @@ ul li {
 }
 
 .bg-color-circle {
-    background-color: var(--purple-2);
+
+    background-image: var(--gradient-2);
+    rotate: 180deg;
 }
 
 .bg-color-circle-2 {
-    background-color: var(--pastel-green-1);
+
+    background-image: var(--gradient-2);
 }
 
 .bg-color-animated-circle {
@@ -518,6 +541,7 @@ ul li {
 }
 
 .grid-color-1-container {
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -555,8 +579,287 @@ ul li {
     }
 }
 
+.bg-pattern-dots {
+    border-radius: 10px;
+    --color-1: var(--light-blue-1);
+    --color-2: var(--light-purple-1);
+    background-color: var(--color-1);
+    background-image: radial-gradient(
+        circle,
+        transparent 1rem,
+        var(--color-2) 1rem,
+        var(--color-2) 3rem,
+        var(--blue-1) 3rem,
+        var(--blue-1) 5rem,
+        transparent 5rem
+    );
+    background-size: 3rem 3rem;
+}
+
+.bg-animated-dots {
+    animation: pattern-animation-dots 6000ms infinite alternate;
+}
+
+@keyframes pattern-animation-dots {
+    0% {
+        background-size: 3rem 3rem;
+        background-position: center bottom;
+    }
+    50%{
+        background-size: 5rem 0rem;
+    }
+    100% {
+        background-size: 0rem 5rem;
+        background-position: center top;
+    }
+}
+
+.dots-btn{
+    line-height: 5rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 4rem;
+    background-color: var(--white-1);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid var(--black-1);
+    color: var(--black-1);
+    transition:
+    transform 50ms ease-in,
+    box-shadow 50ms ease-in,
+    background-color 600ms;
+}
+
+.dots-btn:hover,
+.dots-btn:focus{
+    background-color: var(--yellow-2);
+    transform: translate(-7px, -7px);
+    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
+    box-shadow: 7px 7px 0pc 0pc var(--black-1);
+}
+
+.dots-btn:active{
+    transform: translate(2px, 2px);
+    --webkit-box-shadow: 2px 2px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 2px 2px 0px 0px var(--black-1);
+    box-shadow: 2px 2px 0pc 0pc var(--black-1);
+}
+
+
+/* OK */
+
+
+.grid-pattern-item-1 {
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-pattern-header-1 {
+    text-align: center;
+    color: var(--white-1);
+    font-size: 8vh;
+    word-break: break-all;
+}
+
+.bg-gradient-1 {
+    background-image: var(--gradient-5);
+    background-size: 300%;
+}
+
+.bg-animated-gradient-1 {
+    animation: bg-animated-gradient-1 infinite alternate 10000ms;
+}
+
+@keyframes bg-animated-gradient-1 {
+    0% {
+        background-position: right;
+    }
+    50%{
+        background-position: bottom;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+/* CLOCK */
+
+.clock-container {
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--pink-2);
+}
+
+.clock-typography {
+    font-size: 10vh;
+}
+
+@media (min-width: 768px) {
+    .clock-typography {
+        font-size: 50vh;
+    }
+}
+
+.clock-pattern {
+    border-radius: 10px;
+    background-color: var(--white-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-typography {
+    font-size: 10vh;
+    text-align: center;
+    animation: spinning-tic-tac 60000ms infinite linear;
+}
+
+@keyframes spinning-tic-tac {
+    from {
+        rotate: 0;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+/* OK */
+.bg-pattern-zig-zag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-2);
+    background-size: 4rem 4rem;
+    background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+    background-image: linear-gradient(
+            -45deg,
+            transparent 75%,
+            var(--color-1) 75%
+        ),
+        linear-gradient(45deg, transparent 75%, var(--color-1) 75%),
+        linear-gradient(-135deg, transparent 75%, var(--color-1) 75%),
+        linear-gradient(135deg, transparent 75%, var(--color-1) 75%);
+}
+
+.bg-animated-zig-zag {
+    animation: pattern-animation-zig-zag 5000ms infinite alternate;
+}
+
+/* Animation */
+
+@keyframes pattern-animation-zig-zag {
+    0% {
+        background-size: 4rem 4rem, 2rem 2rem;
+        background-position: center;
+        background-color: var(--white-1);
+    }
+    50% {
+        background-color: var(--neon-green-1);
+    }
+    100% {
+        background-size: 5rem 5rem, 1rem 1rem;
+        background-position: 2rem 0, 2rem 0, 0 0, 0 0;
+        background-color: var(--light-purple-1);
+    }
+}
+
+.zig-zag-btn{
+    line-height: 7rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 8rem;
+    background-color: var(--black-1);
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 100%;
+    border: 2px solid var(--white-1);
+    color: var(--black-1);
+    transition:
+    transform 50ms ease-in,
+    box-shadow 50ms ease-in,
+    background-color 600ms;
+}
+
+.zig-zag-btn:hover,
+.zig-zag-btn:focus{
+    border:2px solid var(--black-1);
+    background-color: var(--red-1);
+    color: var(--white-1);
+    transform: translate(7px, 7px);
+    --webkit-box-shadow: -7px -7px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: -7px -7px 0px 0px var(--black-1);
+    box-shadow: -7px -7px 0pc 0pc var(--black-1);
+}
+
+.zig-zag-btn-btn:active{
+    transform: translate(2px, 2px);
+    --webkit-box-shadow: 2px 2px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 2px 2px 0px 0px var(--black-1);
+    box-shadow: 2px 2px 0pc 0pc var(--black-1);
+}
+
+
+/* OK */
+.bg-pattern-grid {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --color-1: var(--black-1);
+    --color-2: var(--white-1);
+    background-color: var(--color-1);
+    background-size: 3rem 3rem;
+    background-image: linear-gradient(var(--color-2) 0.1rem, transparent 0.1rem),
+        linear-gradient(90deg, var(--color-2) 0.1rem, transparent 0.1rem);
+}
+
+.bg-animated-grid {
+    animation: pattern-animation-grid 4000ms infinite alternate;
+}
+
+@keyframes pattern-animation-grid {
+    from {
+        background-size: 4rem 4rem, 2rem 2rem;
+        background-position: center;
+        /* background-position: 2rem 0, 4rem 0, 0 0, 0 0; */
+    }
+    to {
+        background-size: 1rem 1rem, 5rem 1rem;
+        background-position: center;
+        /* background-position: 2rem 0, 2rem 0, 0 0, 0 0; */
+    }
+}
+
+.grid-grid-header {
+    filter: invert(1);
+    mix-blend-mode: difference;
+    font-family: var(--major-mono-display);
+    font-size: 20vh;
+}
+
+@media (min-width: 425px) {
+    .grid-grid-header {
+        font-size: 30vh;
+    }
+}
+
 /* OK */
 .bg-pattern-wave {
+    border-radius: 10px;
     --color-1: var(--black-1);
     --color-2: var(--white-1);
     background-color: var(--color-1);
@@ -604,6 +907,7 @@ ul li {
 
 /* OK */
 .bg-pattern-circles {
+    border-radius: 10px;
     --color-1: var(--pastel-green-1);
     --color-2: var(--white-1);
     background-color: var(--color-1);
@@ -638,151 +942,71 @@ ul li {
     }
 }
 
-/* OK */
-.bg-pattern-dots {
-    --color-1: var(--black-1);
-    --color-2: var(--green-3);
-    background-color: var(--color-1);
-    background-image: radial-gradient(
-        circle,
-        transparent 1rem,
-        var(--color-2) 1rem,
-        var(--color-2) 3rem,
-        var(--blue-1) 3rem,
-        var(--blue-1) 5rem,
-        transparent 5rem
-    );
-    background-size: 3rem 3rem;
-}
-
-.bg-animated-dots {
-    animation: pattern-animation-dots 6000ms infinite alternate;
-}
-
-@keyframes pattern-animation-dots {
-    from {
-        background-size: 3rem 3rem;
-        background-position: center bottom;
-    }
-    to {
-        background-size: 1rem 5rem;
-        background-position: center top;
-    }
-}
-
-.grid-pattern-item-1 {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.grid-pattern-header-1 {
+.wave-btn{
+    line-height: 7rem;
     text-align: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 8rem;
+    background-image: var(--gradient-2);
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 100%;
+    border: 2px solid var(--white-1);
     color: var(--white-1);
-    font-size: 8vh;
-    word-break: break-all;
+    transition:
+    transform 50ms ease-in,
+    box-shadow 50ms ease-in,
+    background-color 600ms;
 }
 
-.bg-gradient-1 {
-    background-image: var(--gradient-5);
-    background-size: 300%;
+.wave-btn:hover,
+.wave-btn:focus{
+    color: var(--white-1);
+    transform: translate(7px, -7px);
+    --webkit-box-shadow: -7px 7px 0px 0px var(--white-1);
+    --moz-boz-box-shadow: -7px 7px 0px 0px var(--white-1);
+    box-shadow: -7px 7px 0px 0px var(--white-1);
 }
 
-.bg-animated-gradient-1 {
-    animation: bg-animated-gradient-1 infinite alternate 10000ms;
+.wave-btn:active{
+    transform: translate(2px, 0px);
+    --webkit-box-shadow: 2px 0px 0px 0px var(--white-1);
+    --moz-boz-box-shadow: 2px 0px 0px 0px var(--white-1);
+    box-shadow: 2px 0px 0px 0px var(--white-1);
 }
 
-@keyframes bg-animated-gradient-1 {
-    from {
-        background-position: right;
-    }
-    to {
-        background-position: left;
-    }
+.circle-btn{
+    line-height: 7rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 8rem;
+    background-color: var(--blue-1);
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 10%;
+    border: 2px solid var(--white-1);
+    color: var(--white-1);
+    transition:
+    transform 50ms ease-in,
+    box-shadow 50ms ease-in,
 }
 
-/* OK */
-.bg-pattern-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    --color-1: var(--black-1);
-    --color-2: var(--white-1);
-    background-color: var(--color-1);
-    background-size: 3rem 3rem;
-    background-image: linear-gradient(var(--color-2) 0.1rem, transparent 0.1rem),
-        linear-gradient(90deg, var(--color-2) 0.1rem, transparent 0.1rem);
+.circle-btn:hover,
+.circle-btn:focus{
+    color: var(--white-1);
+    transform: translate(-7px, 7px);
+    --webkit-box-shadow: 7px -7px 0px 0px var(--blue-1);
+    --moz-boz-box-shadow: 7px -7px 0px 0px var(--blue-1);
+    box-shadow: 7px -7px 0px 0px var(--blue-1);
 }
 
-.bg-animated-grid {
-    animation: pattern-animation-1 4000ms infinite alternate;
-}
-
-@keyframes pattern-animation-grid {
-    from {
-        background-size: 4rem 4rem, 2rem 2rem;
-        background-position: center;
-        /* background-position: 2rem 0, 4rem 0, 0 0, 0 0; */
-    }
-    to {
-        background-size: 3rem 3rem;
-        background-position: center;
-        /* background-position: 2rem 0, 2rem 0, 0 0, 0 0; */
-    }
-}
-
-.grid-grid-header {
-    filter: invert(1);
-    mix-blend-mode: difference;
-    font-family: var(--major-mono-display);
-    font-size: 20vh;
-}
-
-@media (min-width: 425px) {
-    .grid-grid-header {
-        font-size: 30vh;
-    }
-}
-
-/* OK */
-.bg-pattern-zig-zag {
-    --color-1: var(--black-1);
-    --color-2: var(--white-1);
-    background-color: var(--color-2);
-    background-size: 4rem 4rem;
-    background-position: 2rem 0, 2rem 0, 0 0, 0 0;
-    background-image: linear-gradient(
-            -45deg,
-            transparent 75%,
-            var(--color-1) 75%
-        ),
-        linear-gradient(45deg, transparent 75%, var(--color-1) 75%),
-        linear-gradient(-135deg, transparent 75%, var(--color-1) 75%),
-        linear-gradient(135deg, transparent 75%, var(--color-1) 75%);
-}
-
-.bg-animated-zig-zag {
-    animation: pattern-animation-zig-zag 5000ms infinite alternate;
-}
-
-/* Animation */
-
-@keyframes pattern-animation-zig-zag {
-    0% {
-        background-size: 4rem 4rem, 2rem 2rem;
-        background-position: center;
-        background-color: var(--white-1);
-    }
-    50% {
-        background-color: var(--neon-green-1);
-    }
-    100% {
-        background-size: 5rem 5rem, 1rem 1rem;
-        background-position: 2rem 0, 2rem 0, 0 0, 0 0;
-        background-color: var(--light-purple-1);
-    }
+.circle-btn:active{
+    transform: translate(2px, 0px);
+    --webkit-box-shadow: 2px 0px 0px 0px var(--white-1);
+    --moz-boz-box-shadow: 2px 0px 0px 0px var(--white-1);
+    box-shadow: 2px 0px 0px 0px var(--white-1);
 }
 
 /* GRID_TEMPLATE */
@@ -795,11 +1019,15 @@ ul li {
 /* DIfferent Grids */
 
 .grid-container {
-    margin-top: 2.8rem;
+    padding: .5px;
+    background-color: var(--black-1);
+    margin-top: 2.5rem;
     display: grid;
 }
 
 .grid-layout-wrapper-1 {
+    gap: 1px;
+    padding: .5px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -807,11 +1035,14 @@ ul li {
 
 .grid-item-1 {
     display: grid;
+    gap: 1px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .grid-layout-wrapper-2 {
+    gap: 1px;
+    padding: .25px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -837,47 +1068,6 @@ ul li {
 }
 
 
-/* CLOCK */
-
-.clock-container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--pink-2);
-}
-
-.clock-header {
-    font-size: 10vh;
-    color: white;
-    font-family: var(--nabla-display);
-}
-
-@media (min-width: 768px) {
-    .clock-header {
-        font-size: 20vh;
-    }
-}
-
-.clock-pattern {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.clock-typography {
-    font-size: 10vh;
-    text-align: center;
-    animation: spinning-tic-tac 60000ms infinite linear;
-}
-
-@keyframes spinning-tic-tac {
-    from {
-        rotate: 0;
-    }
-    to {
-        rotate: 360deg;
-    }
-}
 
 /* Footer */
 
@@ -911,7 +1101,7 @@ ul li {
 .foot-wrapper-right {
     background-image: url('../src/img/_vågor.png');
     background-color: var(--orange-1);
-    animation: switch-color-right infinite linear 8000ms;
+    animation: switch-color-right infinite alternate 8000ms;
 }
 
 @keyframes switch-color-right {
@@ -972,14 +1162,15 @@ ul li {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 100vw;
+    min-height: 91vw;
+    padding: 1rem 1rem;
 }
 
 @media (min-width: 768px) {
     .right-shoe,
     .left-shoe {
         rotate: 0deg;
-        min-height: 93vh;
+        min-height: 90vh;
     }
 }
 
@@ -1012,4 +1203,28 @@ ul li {
 
 .left-shoe {
     background-image: url('./img/_left_shoe.png');
+}
+
+.foot-info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.foot-header{
+    padding: 1rem;
+    background-color: var(--white-1);
+    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
+    box-shadow: 7px 7px 0pc 0pc var(--black-1);
+}
+
+.foot-info{
+    padding: 1rem;
+    line-height: 5rem;
+    font-size: 5rem;
+    background-color: var(--white-1);
+    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
+    box-shadow: 7px 7px 0pc 0pc var(--black-1);
 }

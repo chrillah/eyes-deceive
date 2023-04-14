@@ -11,33 +11,46 @@ function Home() {
         setEyeClass(!eyeClass)
         crazyGrid()
         activateCross()
+        setIsHovering(false)
     }
 
     function crazyGrid() {
         setCrazyClass(!crazyClass)
     }
 
-    function activateCross(){
+    function activateCross() {
         setCrossClass(!crossClass)
     }
 
-    function handleHover(){
-        // setIsHovering(true)
-        console.log('hover')
+    function handleHover() {
+        setIsHovering(true)
     }
 
-    function handleLeave(){
-        // setIsHovering(false)
+    function handleLeave() {
+        setIsHovering(false)
     }
 
     const eye = eyeClass ? 'eye-lid' : 'open-eye'
     const crazy = crazyClass ? 'hero-container' : 'crazy-container'
-    const cross = crossClass ? 'hero-wrapper' : 'hero-wrapper hero-animated-cross'
+    const cross = crossClass
+        ? 'hero-wrapper'
+        : 'hero-wrapper hero-animated-cross'
     return (
         <div className={cross}>
             <div className={crazy}>
-            <div onMouseEnter={handleHover} onMouseLeave={handleLeave} className="hover-area" />
-                <div onClick={openEye} className={eye}>
+                {eye === 'eye-lid' ? (
+                    <div
+                        onMouseEnter={handleHover}
+                        onMouseLeave={handleLeave}
+                        className="hover-area"
+                    />
+                ) : (
+                    ''
+                )}
+                <div
+                    onClick={openEye}
+                    className={isHovering ? 'small-eye' : eye}
+                >
                     <Link to="/spaced">
                         <div className="eye">
                             <svg
@@ -139,7 +152,15 @@ function Home() {
                         </div>
                     </Link>
                 </div>
-                <div onMouseEnter={handleHover} onMouseLeave={handleLeave} className="hover-area" />
+                {eye === 'eye-lid' ? (
+                    <div
+                        onMouseEnter={handleHover}
+                        onMouseLeave={handleLeave}
+                        className="hover-area"
+                    />
+                ) : (
+                    ''
+                )}
             </div>
         </div>
     )

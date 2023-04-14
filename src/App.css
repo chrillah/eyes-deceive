@@ -317,6 +317,7 @@ a{
     }
 }
 
+.small-eye,
 .eye-lid,
 .open-eye {
     cursor: pointer;
@@ -338,6 +339,10 @@ a{
 
 .open-eye {
     height: 120px;
+}
+
+.small-eye{
+    height: 20px;
 }
 
 .eye {
@@ -363,6 +368,7 @@ a{
 }
 
 @media (min-width: 768px) {
+    .small-eye,
     .eye-lid,
     .open-eye {
         min-width: 600px;

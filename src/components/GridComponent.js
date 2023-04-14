@@ -75,7 +75,7 @@ function GridComponent(props) {
                                     </div>
                                 ) : (
                                     <a
-                                        class="cross-btn"
+                                        className="cross-btn"
                                         href="https://www.youtube.com/watch?v=pIvTdPBFY6I&ab_channel=FadetoMind"
                                         target="_blanc"
                                     >

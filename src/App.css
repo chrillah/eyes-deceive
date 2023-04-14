@@ -1163,6 +1163,24 @@ a{
 .foot-wrapper-left,
 .foot-wrapper-right {
     padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 425px) {
+    .foot-wrapper-left,
+.foot-wrapper-right {
+    padding: 0 1rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+}
+
+@media (min-width:768px){
+    .foot-wrapper-left,
+.foot-wrapper-right {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
 }
 
 .foot-wrapper-right {
@@ -1229,8 +1247,14 @@ a{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 91vw;
-    padding: 1rem 1rem;
+    min-height: 100vw;
+}
+
+@media (min-width: 425px) {
+    .right-shoe,
+    .left-shoe {
+        min-height: 90vw;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1279,6 +1303,7 @@ a{
 }
 
 .foot-header{
+    font-size: 1.5rem;
     padding: 1rem;
     background-color: var(--white-1);
     --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
@@ -1287,11 +1312,23 @@ a{
 }
 
 .foot-info{
-    padding: 1rem;
-    line-height: 5rem;
-    font-size: 5rem;
+    padding: .5rem;
+    line-height: 3rem;
+    font-size: 3rem;
     background-color: var(--white-1);
     --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
     --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
     box-shadow: 7px 7px 0pc 0pc var(--black-1);
+}
+
+@media (min-width: 425px){
+    .foot-header{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .foot-info{
+        line-height: 5rem;
+        padding: 1rem;
+        font-size: 5rem;
+    }
 }

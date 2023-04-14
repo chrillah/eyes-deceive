@@ -28,7 +28,11 @@ function GridComponent(props) {
                         >
                             <div className="grid-triangle-1">
                                 <svg
-                                    className={props.regular ? "black-arrow" : "black-arrow black-arrow-spin"}
+                                    className={
+                                        props.regular
+                                            ? 'black-arrow'
+                                            : 'black-arrow black-arrow-spin'
+                                    }
                                     id="Layer_1"
                                     data-name="Layer 1"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +63,10 @@ function GridComponent(props) {
                                 key={item.id}
                                 className={
                                     props.regular
-                                        ? item.pattern + ' grid-color-1-container'
-                                        : item.gradient + ' grid-color-1-container'
+                                        ? item.pattern +
+                                          ' grid-color-1-container'
+                                        : item.gradient +
+                                          ' grid-color-1-container'
                                 }
                             >
                                 <div className="grid-color-1">
@@ -83,7 +89,19 @@ function GridComponent(props) {
                             }
                         >
                             <div className="grid-pattern-item-1">
-                                {item.typography === '' ? <a href='https://www.youtube.com/watch?v=kSo6LT0xPSQ&ab_channel=Windows96-Topic' target='_blanc' className="dots-btn">🝏🜹</a>: <h1 className='grid-pattern-header-1'>{item.typography}</h1>}
+                                {item.typography === '' ? (
+                                    <a
+                                        href="https://www.youtube.com/watch?v=kSo6LT0xPSQ&ab_channel=Windows96-Topic"
+                                        target="_blanc"
+                                        className="dots-btn"
+                                    >
+                                        🝏🜹
+                                    </a>
+                                ) : (
+                                    <h1 className="grid-pattern-header-1">
+                                        {item.typography}
+                                    </h1>
+                                )}
                             </div>
                         </div>
                     ))}
@@ -95,13 +113,19 @@ function GridComponent(props) {
                         <div
                             key={item.id}
                             className={
-                                props.regular
-                                    ? item.pattern
-                                    : item.gradient
+                                props.regular ? item.pattern : item.gradient
                             }
                         >
                             {props.clock}
-                            {props.regular ? '' : <div className='clock-pattern'><h1 className='clock-typography'>T͓̊i͓̊c͓̊ T͓̊å͓c͓̊</h1></div>}
+                            {props.regular ? (
+                                ''
+                            ) : (
+                                <div className="clock-pattern">
+                                    <h1 className="clock-typography">
+                                        T͓̊i͓̊c͓̊ T͓̊å͓c͓̊
+                                    </h1>
+                                </div>
+                            )}
                         </div>
                     ))}
 
@@ -114,7 +138,19 @@ function GridComponent(props) {
                                     props.regular ? item.pattern : item.gradient
                                 }
                             >
-                                {item.typography === '' ? <a href='https://www.youtube.com/watch?v=CEaRON-XP3g&ab_channel=Vaperror-Topic' target='_blanc' className="zig-zag-btn">△</a> : <h1 className='grid-grid-header'>{item.typography}</h1> }
+                                {item.typography === '' ? (
+                                    <a
+                                        href="https://www.youtube.com/watch?v=CEaRON-XP3g&ab_channel=Vaperror-Topic"
+                                        target="_blanc"
+                                        className="zig-zag-btn"
+                                    >
+                                        △
+                                    </a>
+                                ) : (
+                                    <h1 className="grid-grid-header">
+                                        {item.typography}
+                                    </h1>
+                                )}
                             </div>
                         ))}
                 </div>
@@ -131,7 +167,15 @@ function GridComponent(props) {
                                     : item.gradient + ' grid-pattern-item-1'
                             }
                         >
-                            <a href={item.link} target='_blanc' className={item.id === 9 ? "wave-btn" : "circle-btn"}>{item.typography}</a>
+                            <a
+                                href={item.link}
+                                target="_blanc"
+                                className={
+                                    item.id === 9 ? 'wave-btn' : 'circle-btn'
+                                }
+                            >
+                                {item.typography}
+                            </a>
                         </div>
                     ))}
             </div>

@@ -798,14 +798,23 @@ a{
 .clock-typography {
     font-size: 10vh;
     text-align: center;
-    animation: spinning-tic-tac 60000ms infinite linear;
+    animation: spinning-tic-tac 4000ms infinite linear;
 }
 
 @keyframes spinning-tic-tac {
-    from {
+    0% {
         rotate: 0;
     }
-    to {
+    20%,25%{
+        rotate: 90deg;
+    }
+    45%, 50%{
+        rotate: 180deg;
+    }
+    70%,75%{
+        rotate: 270deg;
+    }
+    95%,100% {
         rotate: 360deg;
     }
 }
@@ -1116,9 +1125,6 @@ a{
     gap: 1px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-}
-
-.main-container{
 }
 
 .main-container-animated,

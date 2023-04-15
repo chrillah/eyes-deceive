@@ -23,15 +23,23 @@ function Clock() {
     const backgroundColor = getBackgroundColor(time)
 
     return (
-        <div style={{ backgroundColor }} className="clock-container">
+        <ClockContainer backgroundColor={backgroundColor}>
             <ClockHeader >
                 {time.toLocaleTimeString([], { hour12: false })}
             </ClockHeader>
-        </div>
+        </ClockContainer>
     )
 }
 
 export default Clock
+
+const ClockContainer = styled.div`
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: ${(props) => props.backgroundColor};
+`
 
 const ClockHeader = styled.h1`
     display: flex;

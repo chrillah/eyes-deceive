@@ -769,14 +769,6 @@ a{
 
 /* CLOCK */
 
-.clock-container {
-    border-radius: 10px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--pink-2);
-}
-
 .clock-typography {
     font-size: 10vh;
 }

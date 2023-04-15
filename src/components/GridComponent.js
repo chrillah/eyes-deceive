@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function GridComponent(props) {
     const gridLayoutOne = props.data.slice(0, 3)
@@ -48,7 +49,7 @@ function GridComponent(props) {
                                         className="black-arrow-details"
                                         x1=".71"
                                         y1="23.46"
-                                        x2="50.71"
+                                        x2="46"
                                         y2="23.46"
                                     />
                                 </svg>

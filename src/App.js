@@ -6,21 +6,23 @@ import Grid from './pages/Grid'
 import Spaced from './pages/Spaced'
 import Footer from './components/Footer'
 import OpticalIllusion from './pages/OpticalIllusion'
-import Test from './components/Clock'
+import Clock from './components/Clock'
 
 import { UserInfo } from './UserInfo'
 import Foot from './pages/Foot'
+import Display from './pages/Display'
 
 function App() {
     return (
         <>
             <NavBar />
-            <UserInfo.Provider value={<Test />}>
+            <UserInfo.Provider value={<Clock />}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/grid" element={<Grid />} />
                     <Route path="/spaced" element={<Spaced />} />
                     <Route path="/optical" element={<OpticalIllusion />} />
+                    <Route path="/display/:id" element={<Display />} />
                     <Route path="/foot/:side" element={<Foot />} />
                 </Routes>
             </UserInfo.Provider>

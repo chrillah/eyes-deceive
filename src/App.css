@@ -790,23 +790,35 @@ a{
 .clock-typography {
     font-size: 10vh;
     text-align: center;
-    animation: spinning-tic-tac 4000ms infinite linear;
+    animation: spinning-tic-tac 8000ms infinite linear;
 }
 
 @keyframes spinning-tic-tac {
     0% {
         rotate: 0;
     }
-    20%,25%{
+    7.5%,12.5%{
+        rotate: 45deg;
+    }
+    20%, 25%{
         rotate: 90deg;
     }
-    45%, 50%{
+    32.5%,37.5%{
+        rotate: 135deg;
+    }
+    45%,50% {
         rotate: 180deg;
     }
-    70%,75%{
+    57.5%, 62.5%{
+        rotate: 225deg;
+    }
+    70%, 75%{
         rotate: 270deg;
     }
-    95%,100% {
+    82.5%, 87.5%{
+        rotate: 315deg;
+    }
+    95%, 100%{
         rotate: 360deg;
     }
 }
@@ -1121,6 +1133,7 @@ a{
 
 .main-container-animated,
 .main-container{
+    min-height: 80vh;
     border-radius: 10px;
     padding: 1rem;
     margin-top: .5px;
@@ -1131,7 +1144,6 @@ a{
 }
 
 .main-container-animated{
-    min-height: 80vh;
     background-image: var(--gradient-8);
     background-position: center;
     /* background-image: var(--gradient-11); */
@@ -1166,11 +1178,11 @@ a{
 }
 
 .main-crazy-header{
-
+    font-size: 6rem;
 }
 
 .main-header{
-    font-size: 8rem;
+    font-size: 7rem;
 }
 
 .grid-layout-wrapper-2 {

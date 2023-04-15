@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
+export function getBackgroundColor(date) {
+    const hours = date.getHours()
+    if (hours >= 18 || hours < 6) {
+        return '#6b71f2'
+    } else {
+        return '#f2b3d6'
+    }
+}
+
 function Clock() {
     const [time, setTime] = useState(new Date())
 
@@ -10,9 +19,12 @@ function Clock() {
         }, 1000)
         return () => clearInterval(interval)
     }, [])
+
+    const backgroundColor = getBackgroundColor(time)
+
     return (
-        <div className="clock-container">
-            <ClockHeader>
+        <div style={{ backgroundColor }} className="clock-container">
+            <ClockHeader >
                 {time.toLocaleTimeString([], { hour12: false })}
             </ClockHeader>
         </div>

@@ -1143,7 +1143,7 @@ a{
     background-image: var(--gradient-8);
     background-position: center;
     /* background-image: var(--gradient-11); */
-    animation: section-animated linear infinite 800ms;
+    animation: section-animated alternate infinite 6000ms;
 }
 
 @keyframes section-animated {
@@ -1151,8 +1151,17 @@ a{
     0%{
         background-size: 100%;
     }
+    20%{
+        background-size: 150%;
+    }
+    40%{
+        background-size: 300%;
+    }
+    80%{
+        background-size: 600%;
+    }
     100%{
-        background-size: 800%;
+        background-size: 1000%;
     }
 }
 

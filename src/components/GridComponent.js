@@ -86,7 +86,6 @@ function GridComponent(props) {
                         ))}
                 </div>
             </div>
-
             <div className="grid-layout-wrapper-2">
                 {gridLayoutTwo &&
                     gridLayoutTwo.map((item) => (
@@ -116,7 +115,19 @@ function GridComponent(props) {
                         </div>
                     ))}
             </div>
-
+            {props.regular ? (
+                <section className="main-container">
+                    <h1 className="main-header">
+                    ꜛᴋ͎ꜜꜛᴇ͎ꜜꜛᴇ͎ꜜꜛᴘ͎ꜜ ꜛs͎ꜜꜛᴄ͎ꜜꜛʀ͎ꜜꜛᴏ͎ꜜꜛʟ͎ꜜꜛʟ͎ꜜꜛɪ͎ꜜꜛɴ͎ꜜꜛɢ͎ꜜ
+                    </h1>
+                </section>
+            ) : (
+                <section className="main-container-animated">
+                    <h1 className="main-crazy-header">
+                    ▐◀ █☰ █☰ ▐◣  ▄█▀ ◖ ◤▄ ⬤ █▄ █▄ █ █▚▌ 🅶�
+                    </h1>
+                </section>
+            )}
             <div className="grid-layout-wrapper-1">
                 {gridItemThree0 &&
                     gridItemThree0.map((item) => (
@@ -138,7 +149,6 @@ function GridComponent(props) {
                             )}
                         </div>
                     ))}
-
                 <div className="grid-item-1">
                     {gridItemThree1 &&
                         gridItemThree1.map((item) => (
@@ -165,7 +175,6 @@ function GridComponent(props) {
                         ))}
                 </div>
             </div>
-
             <div className="grid-layout-wrapper-2">
                 {gridItemThree3 &&
                     gridItemThree3.map((item) => (

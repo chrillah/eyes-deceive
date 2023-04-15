@@ -472,7 +472,6 @@ a{
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 50vh;
 }
 
 .black-arrow {
@@ -545,6 +544,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 50vh;
 }
 
 .grid-color-1 {

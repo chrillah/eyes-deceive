@@ -1025,7 +1025,7 @@ a{
 }
 
 .bg-animated-circles {
-    animation: pattern-animation-circles 4000ms infinite alternate;
+    animation: pattern-animation-circles 6000ms infinite alternate;
 }
 
 @keyframes pattern-animation-circles {
@@ -1034,10 +1034,12 @@ a{
         background-position: center;
     }
     20% {
-        background-color: var(--white-1);
+        background-color: var(--pink-2);
+        background-size: 2.5rem 2.5rem;
     }
     60% {
         background-color: var(--neon-green-1);
+        background-size: 2rem 2rem;
     }
     100% {
         background-size: 1rem 2rem;

@@ -1139,13 +1139,13 @@ a{
 .grid-container {
     padding: .5px;
     background-color: var(--black-1);
-    margin-top: 2.5rem;
+    margin-top: 44px;
     display: grid;
 }
 
 .grid-layout-wrapper-1 {
-    gap: 1px;
-    padding: .5px;
+    gap: .5px;
+    padding: .5px .5px .5px .4px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1213,7 +1213,7 @@ a{
 }
 
 .grid-layout-wrapper-2 {
-    gap: 1px;
+    gap: .5px;
     padding: .25px;
     display: grid;
     grid-template-columns: 1fr;

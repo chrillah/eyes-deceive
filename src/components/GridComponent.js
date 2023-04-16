@@ -71,9 +71,7 @@ function GridComponent(props) {
                                 }
                             >
                                 {item.typography === 'circle' ? (
-                                    <div className="grid-color-1">
-                                        <div className="grid-inner-color-1" />
-                                    </div>
+                                    <div className="grid-color-circle" />
                                 ) : (
                                     <div
                                         className="cross-btn"

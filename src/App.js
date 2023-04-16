@@ -22,7 +22,7 @@ function App() {
                     <Route path="/grid" element={<Grid />} />
                     <Route path="/spaced" element={<Spaced />} />
                     <Route path="/optical" element={<OpticalIllusion />} />
-                    <Route path="/display/:id" element={<Display />} />
+                    <Route path="/display/:style" element={<Display />} />
                     <Route path="/foot/:side" element={<Foot />} />
                 </Routes>
             </UserInfo.Provider>

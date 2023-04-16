@@ -14,7 +14,7 @@
     {
         "id" : 3,
         "pattern" : "bg-pattern-cross",
-        "gradient" : "bg-pattern-cross  bg-animated-cross"
+        "gradient" : "bg-pattern-cross bg-animated-cross"
     },
     {
         "id" : 4,

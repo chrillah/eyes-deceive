@@ -21,7 +21,7 @@ function GridComponent(props) {
             <div className="grid-layout-wrapper-1">
                 {gridItemOne1 &&
                     gridItemOne1.map((item) => (
-                        <div
+                        <Link to={`/display/${props.regular ? item.pattern : item.gradient}`}
                             key={item.id}
                             className={
                                 props.regular ? item.pattern : item.gradient
@@ -54,13 +54,13 @@ function GridComponent(props) {
                                     />
                                 </svg>
                             </div>
-                        </div>
+                        </Link>
                     ))}
 
                 <div className="grid-item-1">
                     {gridItemOne2 &&
                         gridItemOne2.map((item) => (
-                            <div
+                            <Link to={`/display/${props.regular ? item.pattern : item.gradient}`}
                                 key={item.id}
                                 className={
                                     props.regular
@@ -75,22 +75,20 @@ function GridComponent(props) {
                                         <div className="grid-inner-color-1" />
                                     </div>
                                 ) : (
-                                    <a
+                                    <div
                                         className="cross-btn"
-                                        href="https://www.youtube.com/watch?v=pIvTdPBFY6I&ab_channel=FadetoMind"
-                                        target="_blanc"
                                     >
                                         ⌀
-                                    </a>
+                                    </div>
                                 )}
-                            </div>
+                            </Link>
                         ))}
                 </div>
             </div>
             <div className="grid-layout-wrapper-2">
                 {gridLayoutTwo &&
                     gridLayoutTwo.map((item) => (
-                        <div
+                        <Link to={`/display/${props.regular ? item.pattern : item.gradient}`}
                             key={item.id}
                             className={
                                 props.regular
@@ -100,20 +98,18 @@ function GridComponent(props) {
                         >
                             <div className="grid-pattern-item-1">
                                 {item.typography === '' ? (
-                                    <a
-                                        href="https://www.youtube.com/watch?v=kSo6LT0xPSQ&ab_channel=Windows96-Topic"
-                                        target="_blanc"
+                                    <div
                                         className="dots-btn"
                                     >
                                         🝏🜹
-                                    </a>
+                                    </div>
                                 ) : (
                                     <h1 className="grid-pattern-header-1">
                                         {item.typography}
                                     </h1>
                                 )}
                             </div>
-                        </div>
+                        </Link>
                     ))}
             </div>
             {props.regular ? (
@@ -153,33 +149,31 @@ function GridComponent(props) {
                 <div className="grid-item-1">
                     {gridItemThree1 &&
                         gridItemThree1.map((item) => (
-                            <div
+                            <Link to={`/display/${props.regular ? item.pattern : item.gradient}`}
                                 key={item.id}
                                 className={
                                     props.regular ? item.pattern : item.gradient
                                 }
                             >
                                 {item.typography === '' ? (
-                                    <a
-                                        href="https://www.youtube.com/watch?v=CEaRON-XP3g&ab_channel=Vaperror-Topic"
-                                        target="_blanc"
+                                    <div
                                         className="zig-zag-btn"
                                     >
                                         △
-                                    </a>
+                                    </div>
                                 ) : (
                                     <h1 className="grid-grid-header">
                                         {item.typography}
                                     </h1>
                                 )}
-                            </div>
+                            </Link>
                         ))}
                 </div>
             </div>
             <div className="grid-layout-wrapper-2">
                 {gridItemThree3 &&
                     gridItemThree3.map((item) => (
-                        <div
+                        <Link to={`/display/${props.regular ? item.pattern : item.gradient}`}
                             key={item.id}
                             className={
                                 props.regular
@@ -187,16 +181,14 @@ function GridComponent(props) {
                                     : item.gradient + ' grid-pattern-item-1'
                             }
                         >
-                            <a
-                                href={item.link}
-                                target="_blanc"
+                            <div
                                 className={
                                     item.id === 9 ? 'wave-btn' : 'circle-btn'
                                 }
                             >
                                 {item.typography}
-                            </a>
-                        </div>
+                            </div>
+                        </Link>
                     ))}
             </div>
         </div>

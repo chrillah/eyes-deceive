@@ -576,8 +576,8 @@ a{
     .grid-color-circle {
         margin: 2rem;
         border: solid 40px var(--black-1);
-        min-height: 280px;
-        min-width: 280px;
+        min-height: 200px;
+        min-width: 200px;
     }
 }
 

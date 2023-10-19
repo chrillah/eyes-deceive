@@ -1,4 +1,4 @@
-# LaBb-React
+# Labb-React
 
 # Brief Project Description 
 This SPA is created in React with a component in TypeScript. It is a final project for the JavaScript Library course in frontend development education at ITHS.

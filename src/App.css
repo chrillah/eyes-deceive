@@ -196,7 +196,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -279,7 +279,7 @@ a{
 .hero-container {
     background-size: 800%;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +288,7 @@ a{
 }
 
 .crazy-container {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +391,38 @@ a{
     width: 100%;
 }
 
+.notFound-btn{
+    background-color: var(--white-1);
+    border: none;
+    font-size: 5rem;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.notFound-btn:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 0px 0px var(--purple-1);
+    -webkit-box-shadow: 0px 10px 0px 0px var(--purple-1);
+    -moz-box-shadow: 0px 10px 0px 0px var(--purple-1);
+}
+
+.notFound-btn:focus{
+    background-color: var(--yellow-2);
+    transform: translateY(3px);
+    box-shadow: 0px -2px 0px 0px var(--purple-1);
+    -webkit-box-shadow: 0px -2px 0px 0px var(--purple-1);
+    -moz-box-shadow: 0px -2px 0px 0px var(--purple-1);
+}
+
+
+
+.notFound-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-image: var(--gradient-11);
+}
 
 /* NEW! Patterns */
 .bg-pattern-1 {
@@ -1248,7 +1280,7 @@ a{
 }
 
 .img-container {
-    min-height: 200px;
+    min-height: 20vh;
     background-image: url('./img/footers.png');
     background-position: center bottom;
     background-repeat: no-repeat;

@@ -7,6 +7,7 @@ import Spaced from './pages/Spaced'
 import Footer from './components/Footer'
 import OpticalIllusion from './pages/OpticalIllusion'
 import Clock from './components/Clock'
+import NotFound from './pages/NotFound'
 
 import { UserInfo } from './UserInfo'
 import Foot from './pages/Foot'
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/optical" element={<OpticalIllusion />} />
                     <Route path="/display/:style" element={<Display />} />
                     <Route path="/foot/:side" element={<Foot />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </UserInfo.Provider>
             <Footer />

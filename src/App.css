@@ -1303,7 +1303,7 @@ a{
     padding-bottom: 1rem;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 325px) {
     .foot-wrapper-left,
 .foot-wrapper-right {
     padding: 0 1rem;
@@ -1318,7 +1318,7 @@ a{
 .foot-wrapper-right {
     padding-top: 6rem;
     padding-bottom: 2rem;
-    min-height: 80vh;
+    /* min-height: 80vh; */
 }
 }
 
@@ -1389,7 +1389,7 @@ a{
     min-height: 100vw;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 325px) {
     .right-shoe,
     .left-shoe {
         min-height: 100vw;
@@ -1400,7 +1400,7 @@ a{
     .right-shoe,
     .left-shoe {
         rotate: 0deg;
-        min-height: 90vh;
+        min-height: 90vw;
     }
 }
 

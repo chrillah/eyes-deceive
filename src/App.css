@@ -1276,7 +1276,7 @@ a{
 .foot-wrapper-right {
     padding-top: 10rem;
     padding-bottom: 1rem;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 @media (min-width: 425px) {
@@ -1335,10 +1335,10 @@ a{
     min-height: 100vw;
 }
 
-@media (min-width: 325px) {
+@media (min-width: 425px) {
     .right-shoe,
     .left-shoe {
-        /* min-height: 100vw; */
+        min-height: 100vw;
     }
 }
 

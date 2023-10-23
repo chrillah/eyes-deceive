@@ -1316,8 +1316,9 @@ a{
 @media (min-width:768px){
     .foot-wrapper-left,
 .foot-wrapper-right {
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
+    min-height: 80vh;
 }
 }
 

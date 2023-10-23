@@ -1307,9 +1307,9 @@ a{
     .foot-wrapper-left,
 .foot-wrapper-right {
     padding: 0 1rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
     padding-bottom: 3rem;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 }
 
@@ -1403,6 +1403,7 @@ a{
     }
 }
 
+/* footer */
 .shoe {
     background-position: center;
     background-size: contain;

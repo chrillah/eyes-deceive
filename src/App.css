@@ -1392,7 +1392,7 @@ a{
 @media (min-width: 425px) {
     .right-shoe,
     .left-shoe {
-        min-height: 90vw;
+        min-height: 100vw;
     }
 }
 

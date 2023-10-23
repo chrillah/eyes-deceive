@@ -1309,6 +1309,7 @@ a{
     padding: 0 1rem;
     padding-top: 5rem;
     padding-bottom: 3rem;
+    min-height: 80svh;
 }
 }
 
@@ -1384,7 +1385,7 @@ a{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 100vw;
+    /* min-height: 100vw; */
 }
 
 @media (min-width: 425px) {

@@ -1282,7 +1282,7 @@ a{
     /* padding-top: 10rem; */
     padding-bottom: 1rem;
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
 }
 
 /* @media (min-width: 425px) {

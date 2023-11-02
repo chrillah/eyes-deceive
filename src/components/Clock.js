@@ -46,7 +46,8 @@ const ClockHeader = styled.h1`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 15vh;
+    font-size: 20rem;
     word-break: break-all;
+    color: #fff;
     font-family: var(--nabla-display);
 `

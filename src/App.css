@@ -1281,18 +1281,20 @@ a{
     align-items: center;
     /* padding-top: 10rem; */
     padding-bottom: 1rem;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 @media (min-width: 425px) {
     .foot-wrapper-left,
     .foot-wrapper-right {
+        min-height: 80vh;
 }
 }
 
 @media (min-width:768px){
     .foot-wrapper-left,
     .foot-wrapper-right {
+        min-height: 100vh;
 }
 }
 

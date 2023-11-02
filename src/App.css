@@ -279,7 +279,7 @@ a{
 .hero-container {
     background-size: 800%;
     background-position: center;
-    height: 80vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +288,7 @@ a{
 }
 
 .crazy-container {
-    height: 80vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1274,9 +1274,9 @@ a{
 /* THE SHOE-PAGE */
 .foot-wrapper-left,
 .foot-wrapper-right {
-    padding-top: 10rem;
-    padding-bottom: 1rem;
-    min-height: 60vh;
+    /* padding-top: 10rem;
+    padding-bottom: 1rem; */
+    min-height: 100vh;
 }
 
 @media (min-width: 425px) {
@@ -1328,17 +1328,22 @@ a{
 
 .right-shoe,
 .left-shoe {
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
     rotate: -90deg;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 100vw;
+    /* min-height: 100vw; */
 }
 
 @media (min-width: 425px) {
     .right-shoe,
     .left-shoe {
-        min-height: 100vw;
+        /* min-height: 100vw; */
     }
 }
 
@@ -1346,7 +1351,8 @@ a{
     .right-shoe,
     .left-shoe {
         rotate: 0deg;
-        min-height: 45vw;
+        transform: translate(-50%, 10%);
+        /* min-height: 45vw; */
     }
 }
 

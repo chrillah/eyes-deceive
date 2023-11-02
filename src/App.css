@@ -1348,7 +1348,7 @@ a{
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
     .right-shoe,
     .left-shoe {
         rotate: 0deg;

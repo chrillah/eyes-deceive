@@ -1276,27 +1276,23 @@ a{
 /* THE SHOE-PAGE */
 .foot-wrapper-left,
 .foot-wrapper-right {
-    /* padding-top: 10rem;
-    padding-bottom: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
     min-height: 100vh;
 }
 
 @media (min-width: 425px) {
     .foot-wrapper-left,
     .foot-wrapper-right {
-    padding: 0 1rem;
-    padding-top: 10rem;
-    padding-bottom: 3rem;
-    /* min-height: 80vh; */
 }
 }
 
 @media (min-width:768px){
     .foot-wrapper-left,
     .foot-wrapper-right {
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    /* min-height: 80vh; */
 }
 }
 
@@ -1312,14 +1308,6 @@ a{
     animation: switch-color-left infinite linear 8000ms;
 }
 
-.btn-container {
-    margin: 0 auto;
-    max-width: 800px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-}
-
 .right-shoe {
     background-image: url('./img/_right_shoe.png');
 }
@@ -1330,22 +1318,17 @@ a{
 
 .right-shoe,
 .left-shoe {
-    position: relative;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    width: 100%;
     rotate: -90deg;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 100vw;
-    /* min-height: 100vw; */
 }
 
 @media (min-width: 425px) {
     .right-shoe,
     .left-shoe {
-        /* min-height: 100vw; */
+        min-height: 100vw;
     }
 }
 
@@ -1353,7 +1336,6 @@ a{
     .right-shoe,
     .left-shoe {
         rotate: 0deg;
-        transform: translate(-50%, 10%);
         height: 45vw;
     }
 }
@@ -1478,4 +1460,13 @@ a{
         padding: 1rem;
         font-size: 5rem;
     }
+}
+
+
+.btn-container {
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }

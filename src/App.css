@@ -1279,7 +1279,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     padding-bottom: 1rem;
     min-height: 100vh;
 }
@@ -1318,7 +1318,7 @@ a{
 
 .right-shoe,
 .left-shoe {
-    max-width: 1200px;
+    max-width: 1500px;
     width: 100%;
     rotate: -90deg;
     background-position: center;
@@ -1339,6 +1339,47 @@ a{
         rotate: 0deg;
         /* min-height: 100vw; */
         height: 45vw;
+    }
+}
+
+.foot-info-container{
+    width: 100%;
+    /* max-width: 1200px; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 20vh;
+}
+
+.foot-header{
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: var(--white-1);
+    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
+    box-shadow: 7px 7px 0pc 0pc var(--black-1);
+}
+
+.foot-info{
+    padding: .5rem;
+    line-height: 3rem;
+    font-size: 3rem;
+    background-color: var(--white-1);
+    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
+    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
+    box-shadow: 7px 7px 0pc 0pc var(--black-1);
+}
+
+@media (min-width: 425px){
+    .foot-header{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .foot-info{
+        line-height: 5rem;
+        padding: 1rem;
+        font-size: 5rem;
     }
 }
 
@@ -1416,8 +1457,6 @@ a{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    /* height: auto;
-    max-width: 100%; */
     height: 100px;
 }
 
@@ -1433,43 +1472,4 @@ a{
 
 .left {
     background-image: url('./img/_left_shoe.png');
-}
-
-.foot-info-container{
-    max-width: 1200px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.foot-header{
-    font-size: 1.5rem;
-    padding: 1rem;
-    background-color: var(--white-1);
-    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
-    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
-    box-shadow: 7px 7px 0pc 0pc var(--black-1);
-}
-
-.foot-info{
-    padding: .5rem;
-    line-height: 3rem;
-    font-size: 3rem;
-    background-color: var(--white-1);
-    --webkit-box-shadow: 7px 7px 0px 0px var(--black-1);
-    --moz-boz-box-shadow: 7px 7px 0px 0px var(--black-1);
-    box-shadow: 7px 7px 0pc 0pc var(--black-1);
-}
-
-@media (min-width: 425px){
-    .foot-header{
-        padding: 1rem;
-        font-size: 2rem;
-    }
-    .foot-info{
-        line-height: 5rem;
-        padding: 1rem;
-        font-size: 5rem;
-    }
 }

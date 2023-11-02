@@ -615,7 +615,7 @@ a{
 
 /* OK */
 .bg-pattern-cross {
-    border: 2px solid var(--white-1);
+    /* border: 2px solid var(--white-1); */
     --color-1: var(--black-1);
     --color-2: var(--black-1);
     background-color: var(--color-1);

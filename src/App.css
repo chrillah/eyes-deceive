@@ -279,7 +279,7 @@ a{
 .hero-container {
     background-size: 800%;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +288,7 @@ a{
 }
 
 .crazy-container {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

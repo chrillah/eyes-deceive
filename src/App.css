@@ -1281,10 +1281,11 @@ a{
     align-items: center;
     /* padding-top: 10rem; */
     padding-bottom: 1rem;
-    min-height: 60vh;
+    min-height: 100vh;
+    width: 100vw;
 }
 
-@media (min-width: 425px) {
+/* @media (min-width: 425px) {
     .foot-wrapper-left,
     .foot-wrapper-right {
         min-height: 80vh;
@@ -1296,7 +1297,7 @@ a{
     .foot-wrapper-right {
         min-height: 100vh;
 }
-}
+} */
 
 .foot-wrapper-right {
     background-image: url('../src/img/_vågor.png');

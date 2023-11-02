@@ -238,10 +238,11 @@ a{
     fill: none;
     stroke: var(--black-1);
     stroke-miterlimit: 10;
+    stroke-width: 2;
 }
 
 .home-grid {
-    rotate: 45deg;
+    /* rotate: 45deg; */
     width: 30px;
 }
 

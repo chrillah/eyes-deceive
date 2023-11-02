@@ -39,7 +39,7 @@ function NavBar() {
                     <li>
                         <Link to="/optical">
                             <svg
-                                className="home-grid"
+                            className="home-grid"
                                 id="Layer_1"
                                 data-name="Layer 1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -48,77 +48,61 @@ function NavBar() {
                                 <g>
                                     <line
                                         className="home-grid-details"
-                                        x1="24.26"
-                                        x2="24.26"
-                                        y2="30"
+                                        x1="2.2"
+                                        y1="18.03"
+                                        x2="18.03"
+                                        y2="2.2"
                                     />
                                     <line
                                         className="home-grid-details"
-                                        x1="20.56"
-                                        x2="20.56"
-                                        y2="30"
+                                        x1="5.46"
+                                        y1="21.28"
+                                        x2="21.28"
+                                        y2="5.46"
                                     />
                                     <line
                                         className="home-grid-details"
-                                        x1="16.85"
-                                        x2="16.85"
-                                        y2="30"
+                                        x1="8.72"
+                                        y1="24.54"
+                                        x2="24.54"
+                                        y2="8.72"
                                     />
                                     <line
                                         className="home-grid-details"
-                                        x1="13.15"
-                                        x2="13.15"
-                                        y2="30"
-                                    />
-                                    <line
-                                        className="home-grid-details"
-                                        x1="9.44"
-                                        x2="9.44"
-                                        y2="30"
-                                    />
-                                    <line
-                                        className="home-grid-details"
-                                        x1="5.74"
-                                        x2="5.74"
-                                        y2="30"
+                                        x1="11.97"
+                                        y1="27.8"
+                                        x2="27.8"
+                                        y2="11.97"
                                     />
                                 </g>
                                 <g>
                                     <line
                                         className="home-grid-details"
-                                        y1="5.74"
-                                        x2="30"
-                                        y2="5.74"
+                                        x1="18.03"
+                                        y1="27.8"
+                                        x2="2.2"
+                                        y2="11.97"
                                     />
                                     <line
                                         className="home-grid-details"
-                                        y1="9.44"
-                                        x2="30"
-                                        y2="9.44"
+                                        x1="21.28"
+                                        y1="24.54"
+                                        x2="5.46"
+                                        y2="8.72"
                                     />
                                     <line
                                         className="home-grid-details"
-                                        y1="13.15"
-                                        x2="30"
-                                        y2="13.15"
+                                        x1="24.54"
+                                        y1="21.28"
+                                        x2="8.72"
+                                        y2="5.46"
                                     />
                                     <line
                                         className="home-grid-details"
-                                        y1="16.85"
-                                        x2="30"
-                                        y2="16.85"
-                                    />
-                                    <line
-                                        className="home-grid-details"
-                                        y1="20.56"
-                                        x2="30"
-                                        y2="20.56"
-                                    />
-                                    <line
-                                        className="home-grid-details"
-                                        y1="24.26"
-                                        x2="30"
-                                        y2="24.26"
+                                        x1="27.8"
+                                        y1="18.03"
+                                        x2="11.97"
+                                        y2="2.2"
                                     />
                                 </g>
                             </svg>
